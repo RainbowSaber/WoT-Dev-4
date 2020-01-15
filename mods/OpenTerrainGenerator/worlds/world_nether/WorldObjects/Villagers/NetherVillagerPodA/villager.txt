@@ -1,0 +1,18 @@
+{
+  Profession:1,
+  Career:1,
+  CareerLevel:5,
+  Offers:{
+    Recipes:[
+      {buy:{id:netherrack,Count:64},sell:{id:concrete_powder,Damage:0,Count:32},maxUses:9999999},
+      {buy:{id:netherrack,Count:64},sell:{id:concrete_powder,Damage:1,Count:32},maxUses:9999999},
+      {buy:{id:netherrack,Count:64},sell:{id:concrete_powder,Damage:4,Count:32},maxUses:9999999},
+      {buy:{id:netherrack,Count:64},sell:{id:concrete_powder,Damage:7,Count:32},maxUses:9999999},
+      {buy:{id:netherrack,Count:64},sell:{id:concrete_powder,Damage:8,Count:32},maxUses:9999999},
+      {buy:{id:netherrack,Count:64},sell:{id:concrete_powder,Damage:12,Count:32},maxUses:9999999},
+      {buy:{id:netherrack,Count:64},sell:{id:concrete_powder,Damage:14,Count:32},maxUses:9999999},
+      {buy:{id:netherrack,Count:64},sell:{id:concrete_powder,Damage:15,Count:32},maxUses:9999999}
+    ]
+  }
+}
+

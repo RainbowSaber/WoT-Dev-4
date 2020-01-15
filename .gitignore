@@ -1,0 +1,15 @@
+saves/
+logs/
+local/
+.ReAuth.cfg
+.curseclient
+.mixin.out/
+crafttweaker.log
+knownkeys.txt
+local/
+logs/
+minecraftinstance.json
+options.txt
+playerschoice.marker
+usercache.json
+usernamecache.json
