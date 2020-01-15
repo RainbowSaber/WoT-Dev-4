@@ -1,0 +1,10 @@
+---
+- modid: testMod
+  description: "Mod does z"
+  components:
+  - name: feature1
+    description: "Feature does x"
+  - name: feature2
+    description: "Feature does y"
+
+
