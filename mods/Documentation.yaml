@@ -1,0 +1,27 @@
+---
+- modid: testMod
+ desc:  
+ components:
+  - name: feature1
+    desc: description
+
+
+- modid: Rustic
+ desc:  
+ components:
+  - name: Brewing
+    desc: "Rustic adds a system to brew potions and miscellaneous beverages trough: Berwing, Squeezing and drying"
+  - name: Agriculture
+    desc: Rustic both adds crops and herbs for use as food, and in alchemical potions.
+
+- modid: Immersive Engineering
+  desc: "Mod does z"
+  components:
+   - name: Brewing
+     desc: This mod expands on the 
+
+- modid: Quark
+   desc: 
+   components:
+    - name: Brewing
+      desc: Quark adds further new potion effects like resistance and haste to the game, all fully compatible with industrial scale production via Immersive Engineering.
