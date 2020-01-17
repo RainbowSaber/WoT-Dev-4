@@ -1,27 +1,28 @@
 ---
 - modid: testMod
- desc:  
- components:
+  feat:
   - name: feature1
     desc: description
 
 
 - modid: Rustic
- desc:  
- components:
+  feat:
   - name: Brewing
     desc: "Rustic adds a system to brew potions and miscellaneous beverages trough: Berwing, Squeezing and drying"
   - name: Agriculture
     desc: Rustic both adds crops and herbs for use as food, and in alchemical potions.
 
 - modid: Immersive Engineering
-  desc: "Mod does z"
-  components:
+  feat:
    - name: Brewing
      desc: This mod expands on the 
 
 - modid: Quark
-   desc: 
-   components:
-    - name: Brewing
-      desc: Quark adds further new potion effects like resistance and haste to the game, all fully compatible with industrial scale production via Immersive Engineering.
+  feat:
+   - name: Brewing
+     desc: Quark adds further new potion effects like resistance and haste to the game, all fully compatible with industrial scale production via Immersive Engineering.
+
+- modid: BetterCaves
+  feat:
+    - name: worldgen
+      desc: Better Caves overhauls the cave generation to include more interesting, varying kinds of generation, including huge caverns, underground lakes. Also flattens bedrock and allows caves to generate higher up.
