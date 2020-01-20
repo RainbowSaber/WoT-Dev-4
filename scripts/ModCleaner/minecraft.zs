@@ -1,4 +1,7 @@
+import crafttweaker.item.IItemStack;
+import mods.jei.JEI;
 import scripts.lib;
+
 
 var items = 
 [
@@ -19,12 +22,25 @@ var items =
 
 var hItems = 
 [
-    <minecraft:enchanted_book>.withTag({StoredEnchantments: [{lvl: 4 as short, id: 1 as short}]}),
-    <minecraft:splash_potion>.withTag({Potion: "minecraft:water"}),
-    <minecraft:lingering_potion>.withTag({Potion: "minecraft:water"}),
+    <minecraft:enchanted_book>,
+    <minecraft:splash_potion>,
+    <minecraft:lingering_potion>,
     <minecraft:nether_star>,
-    <forge:bucketfilled>.withTag({FluidName: "viscous_wort", Amount: 1000})
+    <forge:bucketfilled>
 ];
 
-lib.cleanArray(items);
-lib.hideArray(hItems);
+function cleanArray(items as IItemStack[]) {
+    for item in items {
+	    mods.jei.JEI.removeAndHide(item);
+        recipes.remove(item);
+    }
+}
+
+function hideArray(items as IItemStack[]) {
+    for item in items {
+        mods.jei.JEI.removeAndHide(item);
+    }
+}
+
+cleanArray(items);
+hideArray(hItems);
