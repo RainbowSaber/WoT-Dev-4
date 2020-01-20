@@ -23,12 +23,12 @@
     "vertical_size": 6,
 
     "ore": [
-      {"block": "minecraft:coal_ore", "weigth": 300},
-      {"block": "thaumcraft:ore_amber", "weigth": 50},
-      {"block": "minecraft:emerald_ore", "weigth": 10},
-      {"block": "minecraft:diamond_ore", "weigth": 1},
-      {"block": "minecraft:coal_block", "weigth": 8},
-      {"block": "minecraft:obsidian", "weigth": 50}
+      {"block": "minecraft:coal_ore", "weigth": 8},
+      {"block": "thaumcraft:ore_amber", "weigth": 20},
+      {"block": "minecraft:emerald_ore", "weigth": 50},
+      {"block": "minecraft:diamond_ore", "weigth": 100},
+      {"block": "minecraft:coal_block", "weigth": 40},
+      {"block": "minecraft:obsidian", "weigth": 15}
     ],
     "stone": "minecraft:stone",
     "density": 130,
@@ -50,9 +50,9 @@
     "vertical_size": 8,
 
     "ore": [
-      {"block": "minecraft:clay", "weigth": 42},
-      {"block": "minecraft:lapis_ore", "weigth": 3},
-      {"block": "thaumcraft:ore_quartz", "weigth": 2}
+      {"block": "minecraft:clay", "weigth": 10},
+      {"block": "minecraft:lapis_ore", "weigth": 15},
+      {"block": "thaumcraft:ore_quartz", "weigth": 20}
     ],
     "stone": "minecraft:stone",
     "density": 1000,
@@ -73,9 +73,9 @@
     "vertical_size": 14,
 
     "ore": [
-      {"block": "immersiveengineering:ore", "weigth": 70},
-      {"block": "immersiveengineering:ore", "meta": 4, "weigth": 2},
-      {"block": "minecraft:gold_ore", "weigth": 2}
+      {"block": "immersiveengineering:ore", "weigth": 10},
+      {"block": "immersiveengineering:ore", "meta": 4, "weigth": 50},
+      {"block": "minecraft:gold_ore", "weigth": 80}
     ],
     "stone": "minecraft:stone",
     "density": 60,
@@ -109,7 +109,7 @@
     "count": 1,
     "rarity": 16,
     "min_y": 5,
-    "max_y": 30,
+    "max_y": 40,
     "indicator": {
       "blocks": [
         {"block": "minecraft:redstone_block"},
@@ -233,9 +233,9 @@
     "vertical_size": 3,
 
     "ore": [
-      {"block": "gravelores:coal_gravel_ore", "weigth": 25},
-      {"block": "minecraft:gravel", "weigth": 30}
-      {"block": "thaumcraft:ore_amber", "weigth": 3}
+      {"block": "gravelores:coal_gravel_ore", "weigth": 10},
+      {"block": "minecraft:gravel", "weigth": 10},
+      {"block": "thaumcraft:ore_amber", "weigth": 20}
 
     ],
     "stone": "minecraft:stone",
@@ -270,10 +270,10 @@
 
   "slate": {
     "type": "curve",
-    "radius": 7,
-    "angle": 14,
-    "horizontal_size": 7,
-    "vertical_size": 13,
+    "radius": 4,
+    "angle": 40,
+    "horizontal_size": 5,
+    "vertical_size": 12,
 
     "ore": [
       {"block": "rustic:slate", "weigth": 1}
@@ -282,7 +282,7 @@
     "density": 1000,
 
     "count": 2,
-    "rarity": 4,
+    "rarity": 9,
     "min_y": 0,
     "max_y": 120 
   }
