@@ -49,4 +49,16 @@ recipes.addShaped(tnt, [
 	[null, dynamite, null]
 ]);
 
+recipes.remove(<immersiveengineering:wooden_device0:4>);
+recipes.addShaped("wot_ex:gunpowederbarrel", <immersiveengineering:wooden_device0:4>, [
+    [null, rope, null],
+    [dynamite, dynamite, dynamite],
+    [null, <immersiveengineering:wooden_device0:1>, null]
+]);
+
+recipes.remove(<quark:arrow_explosive>);
+recipes.addShapeless(<quark:arrow_explosive>, [
+    <minecraft:arrow>, dynamite
+]);
+
 print("Explosives Loaded.");

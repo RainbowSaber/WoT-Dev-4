@@ -25,3 +25,35 @@ var hItems as IItemStack[] =
 ];
 
 lib.hideArray(hItems);
+
+recipes.addShapeless(<minecraft:grass>*2,
+		[<minecraft:dirt>, <minecraft:dirt>, <ore:seed>]
+);
+
+recipes.addShapeless(<minecraft:web>,
+		[<minecraft:string>, <minecraft:string>, <ore:slimeball>]
+);
+
+
+//Horse Armor
+val tannedLeather = <betterwithmods:material:6>;
+
+recipes.addShaped(<minecraft:diamond_horse_armor>, [
+	[null, null, <minecraft:diamond_block>], 
+	[tannedLeather, <minecraft:saddle>, tannedLeather], 
+	[<rustic:chain>, null, <rustic:chain>]]
+);
+recipes.addShaped(<minecraft:golden_horse_armor>, [
+	[null, null, <minecraft:gold_block>], 
+	[tannedLeather, <minecraft:saddle>, tannedLeather], 
+	[<rustic:chain>, null, <rustic:chain>]]
+);
+recipes.addShaped(<minecraft:iron_horse_armor>, [
+	[null, null, <ore:blockIron>], 
+	[tannedLeather, <minecraft:saddle>, tannedLeather], 
+	[<rustic:chain>, null, <rustic:chain>]]);
+
+//Name Tag recipe
+recipes.addShapeless(<minecraft:name_tag>, 
+	[<thaumcraft:label>, <ore:string>, <ore:slimeball>]
+);
