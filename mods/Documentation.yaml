@@ -26,3 +26,43 @@
   feat:
     - name: worldgen
       desc: Better Caves overhauls the cave generation to include more interesting, varying kinds of generation, including huge caverns, underground lakes. Also flattens bedrock and allows caves to generate higher up.
+
+- modid: OreLib
+  feat:
+    - name: coremods
+      desc: Required Core Mod for DynamicSurroundings
+
+- modid: DynamicSurroundings
+  feat:
+    - name: optional
+      desc: Adds a multitude of visual and audio effects in order to make the world feel more alive and interesting.
+
+- modid: Veining
+  feat:
+    - name: enchantment
+      desc: "Veining" is a pickaxe enchantment that allows it's user to harvest a big chunk out of an ore vein at once (max amount 8). Disabled while sneaking.
+
+- modid: Thaumcraft
+  feat:
+    - name: worldgen
+      desc: Adds several ores used in the mods progression(Amber, Quartz, Cinnabar)
+
+- modid: ImmersiveEngineering
+  feat:
+    - name: worldgen
+      desc: Adds several ores used in the mods progression(Copper, Silver, Lead, Nickel, Uranium, Bauxite)
+
+- modid: RealisticOreGeneration
+  feat:
+    - name: worldgen
+      desc: The vanilla ore generation is replaced by sparse, albeit huge veins. Ore tends to be harder to find, though finding a vein is very rewarding.
+
+- modid: WorldStripper
+  feat:
+    - name: tools
+      desc: World Stripper is a tool, that allows you to strip all common blocks from an area, exposing all ore and interesting features.
+
+- modid: Simple Ore Samlples
+  feat::
+     - name: worldgen
+       desc: Adds small ore samples to the surface, indicating a large deposit to be found underground.
