@@ -1,10 +1,14 @@
 import crafttweaker.item.IItemStack;
 import mods.jei.JEI;
-import scripts.lib;
+import scripts.library as lib;
 
-
-var items = 
+var hItems as IItemStack[] = 
 [
+    <minecraft:enchanted_book>,
+    <minecraft:splash_potion>,
+    <minecraft:lingering_potion>,
+    <minecraft:nether_star>,
+    <forge:bucketfilled>,
     <minecraft:bedrock>,
     <minecraft:spawn_egg>,
     <minecraft:barrier>,
@@ -20,27 +24,4 @@ var items =
     <minecraft:knowledge_book>
 ];
 
-var hItems = 
-[
-    <minecraft:enchanted_book>,
-    <minecraft:splash_potion>,
-    <minecraft:lingering_potion>,
-    <minecraft:nether_star>,
-    <forge:bucketfilled>
-];
-
-function cleanArray(items as IItemStack[]) {
-    for item in items {
-	    mods.jei.JEI.removeAndHide(item);
-        recipes.remove(item);
-    }
-}
-
-function hideArray(items as IItemStack[]) {
-    for item in items {
-        mods.jei.JEI.removeAndHide(item);
-    }
-}
-
-cleanArray(items);
-hideArray(hItems);
+lib.hideArray(hItems);

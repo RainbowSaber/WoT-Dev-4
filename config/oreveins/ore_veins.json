@@ -8,7 +8,7 @@
     "indicator": {
       "blocks": {"block": "simpleoresamples:sampleblockbauxite"},
       "max_depth": 80,
-      "rarity": 20
+      "rarity": 30
     },
     "rarity": 23,
     "count": 3,
@@ -62,7 +62,7 @@
     "indicator": {
       "blocks": {"block": "simpleoresamples:sampleblocklapis"},
       "max_depth": 80,
-      "rarity": 15
+      "rarity": 30
     }
   },
 
@@ -87,7 +87,7 @@
       "blocks": [
         {"block": "simpleoresamples:sampleblockcopper"}
       ],
-      "rarity": 20,
+      "rarity": 30,
       "max_depth": 80      
     }
   },
@@ -114,7 +114,7 @@
        {"block": "simpleoresamples:sampleblockredstone"}
       ],
       "max_depth": 80,
-      "rarity": 18
+      "rarity": 30
     }
   },
 
@@ -142,7 +142,7 @@
         {"block": "simpleoresamples:sampleblocklead"}
       ],
       "max_depth": 80,
-      "rarity": 20  
+      "rarity": 30  
     }
   },
 
@@ -170,7 +170,7 @@
         {"block": "simpleoresamples:sampleblockgold"}
       ],
       "max_depth": 80,
-      "rarity": 20
+      "rarity": 30
     }
   },
 
@@ -197,7 +197,7 @@
         {"block": "simpleoresamples:sampleblockiron"}
       ],
       "max_depth": 80,
-      "rarity": 20
+      "rarity": 30
     }
   },
 
@@ -224,7 +224,7 @@
         {"block": "gravelores:iron_gravel_ore"}
       ],
       "max_depth": 30,
-      "rarity": 3
+      "rarity": 5
     }
   },
 
@@ -251,7 +251,7 @@
         {"block": "gravelores:coal_gravel_ore"}
       ],
       "max_depth": 30,
-      "rarity": 3
+      "rarity": 5
     }
   },
 
