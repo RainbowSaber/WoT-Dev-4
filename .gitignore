@@ -8,9 +8,12 @@ crafttweaker.log
 knownkeys.txt
 local/
 logs/
+crash-reports/
 minecraftinstance.json
 options.txt
 playerschoice.marker
 usercache.json
 usernamecache.json
 config/splash.properties
+screenshots/
+config/jei/

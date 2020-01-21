@@ -1,85 +1,291 @@
 {
-  "iron_ore_example": {
-    "type": "cluster",
-    "ore": "ore:oreIron",
+  "bauxite": {
+    "type": "curve",
+    "radius": 6,
+    "angle": 38,
+    "ore": {"block": "immersiveengineering:ore", "meta": 1},
     "stone": "minecraft:stone",
     "indicator": {
-      "blocks": {
-        "block": "minecraft:red_flower",
-        "meta": 3
-      },
-      "rarity": 3,
-      "max_depth": 23
+      "blocks": {"block": "simpleoresamples:sampleblockbauxite"},
+      "max_depth": 80,
+      "rarity": 30
     },
-    "rarity": 20,
-    "count": 5
-  },
-  "gold_ore_example": {
-    "type": "cone",
-    "ore": "minecraft:gold_ore",
-    "stone": "minecraft:stone",
-    "rarity": 30,
-    "min_y": 8,
-    "max_y": 50,
-    "density": 360,
-    "vertical_size": 20,
-    "horizontal_size": 10,
-    "inverted": true
-  },
-  "coal_ore_example": {
-    "type": "sphere",
-    "ore": [
-      {
-        "ore": "oreCoal",
-        "weight": 39
-      },
-      {
-        "block": "minecraft:diamond_ore",
-        "weight": 1
-      }
-    ],
-    "indicator": {
-      "blocks": "minecraft:deadbush",
-      "blocks_under": "minecraft:sand",
-      "rarity": 40
-    },
-    "stone": "minecraft:stone",
-    "rarity": 60,
-    "min_y": 32,
-    "max_y": 128,
-    "density": 80,
-    "vertical_size": 15,
-    "horizontal_size": 30
-  },
-  "redstone_ore_example": {
-    "type": "cluster",
-    "ore": "minecraft:redstone_ore",
-    "stone": "minecraft:stone",
-    "rarity": 30,
-    "min_y": 0,
-    "max_y": 40,
-    "density": 20,
-    "vertical_size": 40,
-    "horizontal_size": 30
-  },
-  "emerald_ore_example": {
-    "type": "cluster",
-    "ore": "minecraft:emerald_ore",
-    "stone": "minecraft:stone",
-    "rarity": 10,
+    "rarity": 23,
     "count": 3,
+    "density": 60,
+    "min_y": 11,
+    "max_y": 50,
+    "horizontal_size": 25
+  },
+
+  "coal_deep": {
+    "type": "cone",
+    "horizontal_size": 9,
+    "vertical_size": 6,
+
+    "ore": [
+      {"block": "minecraft:coal_ore", "weight": 25},
+      {"block": "thaumcraft:ore_amber", "weight": 46},
+      {"block": "minecraft:emerald_ore", "weight": 3},
+      {"block": "minecraft:diamond_ore", "weight": 1},
+      {"block": "minecraft:coal_block", "weight": 4},
+      {"block": "minecraft:obsidian", "weight": 10},
+      {"block": "minecraft:bone_block", "weight": 4}
+    ],
+    "stone": "minecraft:stone",
+    "density": 130,
+
+    "count": 1,
+    "rarity": 8,
     "min_y": 0,
+    "max_y": 30
+  },
+
+  "quartz_lump": {
+    "type": "cluster",
+    "clusters": 4,
+    "horizontal_size": 8,
+    "vertical_size": 8,
+
+    "ore": [
+      {"block": "minecraft:clay", "weight": 16},
+      {"block": "minecraft:lapis_ore", "weight": 3},
+      {"block": "thaumcraft:ore_quartz", "weight": 2}
+    ],
+    "stone": "minecraft:stone",
+    "density": 1000,
+
+    "count": 2,
+    "rarity": 11,
+    "min_y": 5,
+    "max_y": 42,
+    "indicator": {
+      "blocks": {"block": "simpleoresamples:sampleblocklapis"},
+      "max_depth": 80,
+      "rarity": 30
+    }
+  },
+
+  "copper": {
+    "type": "pipe",
+    "horizontal_size": 7,
+    "vertical_size": 14,
+
+    "ore": [
+      {"block": "immersiveengineering:ore", "weight": 68},
+      {"block": "immersiveengineering:ore", "meta": 4, "weight": 5},
+      {"block": "minecraft:gold_ore", "weight": 15}
+    ],
+    "stone": "minecraft:stone",
+    "density": 70,
+
+    "count": 2,
+    "rarity": 23,
+    "min_y": 35,
+    "max_y": 120,
+    "indicator": {
+      "blocks": [
+        {"block": "simpleoresamples:sampleblockcopper"}
+      ],
+      "rarity": 30,
+      "max_depth": 80      
+    }
+  },
+
+  "cinnabar": {
+    "type": "sphere",
+    "horizontal_size": 5,
+    "vertical_size": 10,
+
+		"ore": [
+			{"block": "thaumcraft:ore_cinnabar", "weight": 12},
+			{"block": "minecraft:redstone_ore", "weight": 80},
+			{"block": "minecraft:glowstone", "weight":3}
+		],
+    "stone": "minecraft:stone",
+    "density": 35,
+
+    "count": 1,
+    "rarity": 16,
+    "min_y": 5,
     "max_y": 40,
-    "density": 30,
+    "indicator": {
+      "blocks": [
+       {"block": "simpleoresamples:sampleblockredstone"}
+      ],
+      "max_depth": 80,
+      "rarity": 30
+    }
+  },
+
+  "galena": {
+    "type": "curve",
+    "radius": 4,
+    "angle": 10,
+    "horizontal_size": 25,
+    "vertical_size": 6,
+
+    "ore": [
+      {"block": "immersiveengineering:ore", "meta": 2},
+      {"block": "immersiveengineering:ore", "meta": 3}
+    ],
+    "stone": "minecraft:stone",
+    "density": 200,
+
+    "count": 3,
+    "rarity": 24,
+    "min_y": 0,
+    "max_y": 41,
+    "indicator": {
+      "blocks": [
+        {"block": "simpleoresamples:sampleblocksilver"},
+        {"block": "simpleoresamples:sampleblocklead"}
+      ],
+      "max_depth": 80,
+      "rarity": 30  
+    }
+  },
+
+  "gold": {
+    "type": "curve",
+    "radius": 4,
+    "angle": 60,
+    "horizontal_size": 22,
+    "vertical_size": 6,
+
+    "ore": [
+      {"block": "immersiveengineering:ore", "meta": 0, "weight": 20},
+      {"block": "immersiveengineering:ore", "meta": 4, "weight:": 5},
+      {"block": "minecraft:gold_ore", "weight": 68}
+    ],
+    "stone": "minecraft:stone",
+    "density": 110,
+
+    "count": 4,
+    "rarity": 22,
+    "min_y": 0,
+    "max_y": 35,
+    "indicator": {
+      "blocks": [
+        {"block": "simpleoresamples:sampleblockgold"}
+      ],
+      "max_depth": 80,
+      "rarity": 30
+    }
+  },
+
+  "iron": {
+    "type": "curve",
+    "radius": 10,
+    "angle": 23,
+    "horizontal_size": 25,
+    "vertical_size": 11,
+
+    "ore": [
+      {"block": "minecraft:iron_ore", "weight": 60},
+      {"block": "immersiveengineering:ore", "meta": 4, "weight": 20}
+    ],
+    "stone": "minecraft:stone",
+    "density": 70,
+
+    "count": 3,
+    "rarity": 14,
+    "min_y": 25,
+    "max_y": 62,
+    "indicator": {
+      "blocks": [
+        {"block": "simpleoresamples:sampleblockiron"}
+      ],
+      "max_depth": 80,
+      "rarity": 30
+    }
+  },
+
+  "iron_surface": {
+    "type": "curve",
+    "radius": 3,
+    "angle": 50,
+    "horizontal_size": 11,
     "vertical_size": 5,
-    "horizontal_size": 20,
-    "biomes": [
-      "mountain",
-      "cold",
-      "extreme_hills",
-      "extreme_hills_with_trees",
-      "mutated_extreme_hills",
-      "mutated_extreme_hills_with_trees"
-    ]
+
+    "ore": [
+      {"block": "gravelores:iron_gravel_ore", "weight": 25},
+      {"block": "minecraft:gravel", "weight": 30}
+    ],
+    "stone": "minecraft:stone",
+    "density": 800,
+
+    "count": 2,
+    "rarity": 4,
+    "min_y": 50,
+    "max_y": 120,
+    "indicator": {
+      "blocks": [
+        {"block": "gravelores:iron_gravel_ore"}
+      ],
+      "max_depth": 30,
+      "rarity": 5
+    }
+  },
+
+  "coal_surface": {
+    "type": "sphere",
+    "horizontal_size": 4,
+    "vertical_size": 9,
+
+    "ore": [
+      {"block": "gravelores:coal_gravel_ore", "weight": 25},
+      {"block": "minecraft:gravel", "weight": 20},
+      {"block": "thaumcraft:ore_amber", "weight": 7}
+
+    ],
+    "stone": "minecraft:stone",
+    "density": 1000,
+
+    "count": 2,
+    "rarity": 4,
+    "min_y": 40,
+    "max_y": 120,
+    "indicator": {
+      "blocks": [
+        {"block": "gravelores:coal_gravel_ore"}
+      ],
+      "max_depth": 30,
+      "rarity": 5
+    }
+  },
+
+  "uranium": {
+    "type": "sphere",
+    "horizontal_size": 2,
+    "vertical_size": 4,
+
+    "ore": {"block": "immersiveengineering:ore", "meta": 5},
+    "stone": "minecraft:stone",
+    "density": 100,
+
+    "count": 2,
+    "rarity": 6,
+    "min_y": 0,
+    "max_y": 5
+  },
+
+  "slate": {
+    "type": "curve",
+    "radius": 4,
+    "angle": 40,
+    "horizontal_size": 5,
+    "vertical_size": 12,
+
+    "ore": [
+      {"block": "rustic:slate", "weight": 1}
+    ],
+    "stone": "minecraft:stone",
+    "density": 1000,
+
+    "count": 2,
+    "rarity": 9,
+    "min_y": 0,
+    "max_y": 120 
   }
 }
