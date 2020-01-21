@@ -8,6 +8,7 @@ crafttweaker.log
 knownkeys.txt
 local/
 logs/
+crash-reports/
 minecraftinstance.json
 options.txt
 playerschoice.marker
@@ -16,3 +17,5 @@ usernamecache.json
 config/splash.properties
 crash-reports/
 screenshots/
+screenshots/
+config/jei/
