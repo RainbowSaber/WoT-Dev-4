@@ -9,12 +9,6 @@ var hItems as IItemStack[] = [
     <betterwithmods:material:47>,
     <minecraft:spawn_egg>.withTag({EntityTag: {id: "betterwithmods:bwm_jungle_spider"}}),
     <minecraft:spawn_egg>.withTag({EntityTag: {id: "betterwithmods:longboi"}}),
-    <betterwithmods:fertile_farmland>,
-    <betterwithmods:arcane_scroll>.withTag({enchant: 0}),
-    <betterwithmods:infernal_enchanter>,
-    <betterwithmods:material:47>,
-    <minecraft:spawn_egg>.withTag({EntityTag: {id: "betterwithmods:bwm_jungle_spider"}}),
-    <minecraft:spawn_egg>.withTag({EntityTag: {id: "betterwithmods:longboi"}}),
     <minecraft:farmland>,
     <betterwithmods:planter:2>,
     <betterwithmods:planter:3>,
@@ -24,7 +18,10 @@ var hItems as IItemStack[] = [
     <betterwithmods:planter:6>,
     <betterwithmods:planter:7>,
     <betterwithmods:planter:8>,
-    <betterwithmods:planter:9>
+    <betterwithmods:planter:9>,
+    <betterwithmods:stump_remover>,
+    <betterwithmods:candle>,
+    <betterwithmods:candle_holder>
 ];
 
 lib.cleanArray(hItems);
