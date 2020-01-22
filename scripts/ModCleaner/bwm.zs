@@ -14,22 +14,40 @@ var hItems as IItemStack[] = [
     <betterwithmods:infernal_enchanter>,
     <betterwithmods:material:47>,
     <minecraft:spawn_egg>.withTag({EntityTag: {id: "betterwithmods:bwm_jungle_spider"}}),
-    <minecraft:spawn_egg>.withTag({EntityTag: {id: "betterwithmods:longboi"}})
+    <minecraft:spawn_egg>.withTag({EntityTag: {id: "betterwithmods:longboi"}}),
+    <minecraft:farmland>,
+    <betterwithmods:planter:2>,
+    <betterwithmods:planter:3>,
+    <betterwithmods:planter:1>,
+    <betterwithmods:planter:4>,
+    <betterwithmods:planter:5>,
+    <betterwithmods:planter:6>,
+    <betterwithmods:planter:7>,
+    <betterwithmods:planter:8>,
+    <betterwithmods:planter:9>
 ];
 
 lib.cleanArray(hItems);
 
+var hideItems as IItemStack[] = [
+    <betterwithmods:wooden_broken_gearbox>,
+    <betterwithmods:steel_broken_gearbox>,
+    <betterwithmods:steel_saw>
+];
+
+lib.hideArray(hideItems);
+
 mods.betterwithmods.Anvil.removeShaped(<betterwithmods:material:47>);
 
-var recipeList as String[] = [
+var recipeList = [
     "betterwithmods:items/chainmail_leggings",
     "betterwithmods:items/chainmail_helmet",
     "betterwithmods:items/chainmail_boots",
     "betterwithmods:items/chainmail_chestplate"
-];
+] as string[];
 
-for recipe in recipeList {
-    recipe.removByRecipeName(recipe);
+for rcp in recipeList {
+    recipes.removeByRecipeName(rcp);
 }
 
 val shaft = <betterwithmods:material:36>;
@@ -62,7 +80,6 @@ mods.betterwithmods.Cauldron.builder()
 	.build();
 }
 
-//Magma cream in cauldron
 	
 //Magma Cream Cauldron
 recipes.remove(<minecraft:magma_cream>);

@@ -67,4 +67,31 @@ recipes.addShaped("prospectus_recipe_diamond prospecting pick", <prospectus:item
 	[null, toolShaft, null], [null, toolShaft, null], [diamondIngot, diamondIngot, diamondIngot]
 ]);
 
+var axes = [
+	<immersiveengineering:axe_steel>,
+	<thaumcraft:thaumium_axe>,
+	<thaumcraft:void_axe>
+] as IItemStack[];
+
+var sticks = [
+	<immersiveengineering:material>,
+	<minecraft:stick>,
+	<minecraft:stick>
+] as IItemStack[];
+
+var ingots = [
+	<immersiveengineering:metal:8>,
+	<thaumcraft:ingot>,
+	<thaumcraft:ingot:1>
+] as IItemStack[];
+
+for i in 0 to axes.length {
+	recipes.remove(axes[i]);
+	recipes.addShaped(axes[i], [
+		[ingots[i], null],
+		[ingots[i], sticks[i]],
+		[null, sticks[i]]
+	]);
+}
+
 print("Tools Loaded.");
