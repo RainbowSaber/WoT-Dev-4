@@ -7,7 +7,6 @@ val plank = <ore:plankWood>;
 val siding = <betterwithmods:siding_wood>;
 
 val shield = <minecraft:shield>;
-val ironLadder = <quark:iron_ladder>;
 val ironBar = <minecraft:iron_bars>;
 val chain = <rustic:chain>;
 val lattice = <rustic:iron_lattice>;
@@ -25,13 +24,7 @@ recipes.addShaped(shield, [
 	[null, siding, null]
 ]);
 
-// Ladder
-recipes.remove(ironLadder);
-recipes.addShaped(ironLadder * 16,[
-	[ironRod, null, ironRod],
-	[ironRod, ironIngot, ironRod],
-	[ironRod, null, ironRod]
-]);
+
 
 // Iron Bars
 recipes.remove(ironBar);

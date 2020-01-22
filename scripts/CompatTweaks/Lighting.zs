@@ -34,6 +34,11 @@ recipes.addShaped(<rustic:golden_lantern> * 4, [
     [paneGlass], [torch], [plateGold]
 ]);
 
+recipes.remove(<rusticthaumaturgy:lantern_brass>);
+recipes.addShaped(<rusticthaumaturgy:lantern_brass> * 4, [
+    [paneGlass], [torch], [<thaumcraft:plate>]
+]);
+
 //IE lamps
 
 recipes.remove(lanternIE);
@@ -60,15 +65,33 @@ recipes.addShaped(lampRedstone,[
 ]);
 
 //Candles
-
+val candle = <thaumcraft:candle_white>;
 val docht = <ore:string>;
 val lattice = <rustic:iron_lattice>;
 
 val oreTallow = <ore:tallow>;
 oreTallow.add(<thaumcraft:tallow>);
-
 lib.cleanArray([<rustic:tallow>]);
 
+recipes.remove(<rustic:candle>);
+recipes.addShapeless(<rustic:candle>, [candle, <minecraft:iron_ingot>]);
+
+recipes.remove(<rustic:candle_gold>);
+recipes.addShapeless(<rustic:candle_gold>, [candle, <minecraft:gold_ingot>]);
+
+recipes.remove(<rusticthaumaturgy:candle_brass>);
+recipes.addShapeless(<rusticthaumaturgy:candle_brass>, [candle, <thaumcraft:ingot:2>]);
+
+recipes.remove(<thaumcraft:candle_white>);
+recipes.addShaped("wot_light_candle", <thaumcraft:candle_white> * 3, [
+    [docht],
+    [oreTallow],
+    [oreTallow]
+]);
+
+val badTall = <rustic:tallow>;
+
+furnace.remove(badTall);
 
 
 

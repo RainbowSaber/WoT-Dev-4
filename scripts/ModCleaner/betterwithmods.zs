@@ -20,8 +20,9 @@ var hItems as IItemStack[] = [
     <betterwithmods:planter:8>,
     <betterwithmods:planter:9>,
     <betterwithmods:stump_remover>,
-    <betterwithmods:candle>,
-    <betterwithmods:candle_holder>
+    <betterwithmods:candle:*>,
+    <betterwithmods:candle_holder>,
+    <betterwithmods:booster>
 ];
 
 lib.cleanArray(hItems);
@@ -86,3 +87,6 @@ mods.betterwithmods.Cauldron.builder()
 	.setPriority(2)
 	.build();
 	
+//Remove Candles
+
+mods.betterwithmods.Anvil.removeShaped(<betterwithmods:candle_holder>);
