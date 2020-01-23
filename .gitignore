@@ -8,7 +8,6 @@ crafttweaker.log
 knownkeys.txt
 local/
 logs/
-crash-reports/
 minecraftinstance.json
 options.txt
 playerschoice.marker
@@ -18,8 +17,8 @@ config/splash.properties
 crash-reports/
 screenshots/
 screenshots/
-config/jei/
 hc_options.txt
-config/jei/jei.cfg
-backups/2020-01-23-04-29-49.zip
-backups/2020-01-23-07-17-45.zip
+config/jei/
+backups/
+/.idea/
+/WoT Dev 4.iml

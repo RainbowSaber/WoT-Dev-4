@@ -146,7 +146,7 @@ var wBucket = <minecraft:water_bucket>;
 var brick = <immersiveengineering:stone_decoration>;
 var bucket = <minecraft:bucket>;
 
-recipes.removeByName("immersiveengineering:stone_decoration/cokebrick");
+recipes.removeByRecipeName("immersiveengineering:stone_decoration/cokebrick");
 
 mods.betterwithmods.Cauldron.builder()
 .buildRecipe([sand * 4, clay * 2, wBucket], [brick])

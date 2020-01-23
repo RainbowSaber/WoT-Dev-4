@@ -548,3 +548,52 @@ recipes.addShaped("wot_rc_undercutter", undercutter, [
     [chest, heavyEng, blockPlacer],
     [null, cart, null]
 ]);
+
+// Loaders
+
+var iLoader = <railcraft:manipulator>;
+var iUnloader = <railcraft:manipulator:1>;
+var fLoader = <railcraft:manipulator:4>;
+var fUnloader = <railcraft:manipulator:5>;
+var trainDisp = <railcraft:manipulator:9>;
+
+
+recipes.removeRecipe(iLoader);
+recipes.addShaped("wot_rc_iLoad", iLoader, [
+    [cobblestone, chest, cobblestone],
+    [cobblestone, detector, cobblestone],
+    [cobblestone, hopper, cobblestone]
+]);
+
+recipes.removeRecipe(iUnloader);
+recipes.addShaped("wot_iUnloader", iUnloader, [
+    [cobblestone, hopper, cobblestone],
+    [cobblestone, detector, cobblestone],
+    [cobblestone, chest, cobblestone]
+]);
+
+recipes.removeRecipe(fLoader);
+recipes.addShaped("wot_fLoader", fLoader, [
+    [cobblestone, barrel, cobblestone],
+    [cobblestone, detector, cobblestone],
+    [cobblestone, hopper, cobblestone]
+]);
+
+recipes.removeRecipe(fUnloader);
+recipes.addShaped("wot_fUnloader", fUnloader, [
+    [cobblestone, hopper, cobblestone],
+    [cobblestone, detector, cobblestone],
+    [cobblestone, barrel, cobblestone]
+]);
+
+recipes.removeRecipe(trainDisp);
+recipes.addShapeless(trainDisp, [
+    [<railcraft:manipulator:8>, tool_crowbar_steel]
+]);
+
+var cobble = <ore:cobblestone>;
+var hopper = <minecraft:hopper>;
+var iDete = <railcraft:detector>;
+var fDete = <railcraft:detector:6>;
+var chest = <ore:chest>;
+var barrel = <immersiveengineering:wooden_device0:1>;
