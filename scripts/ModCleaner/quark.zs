@@ -19,7 +19,8 @@ val hItems as IItemStack[] =
     <quark:ancient_tome>.withTag({StoredEnchantments: [{lvl: 5 as short, id: 48 as short}]}),
     <quark:ancient_tome>.withTag({StoredEnchantments: [{lvl: 2 as short, id: 49 as short}]}),
     <quark:ancient_tome>.withTag({StoredEnchantments: [{lvl: 3 as short, id: 61 as short}]}),
-    <quark:ancient_tome>.withTag({StoredEnchantments: [{lvl: 3 as short, id: 62 as short}]})
+    <quark:ancient_tome>.withTag({StoredEnchantments: [{lvl: 3 as short, id: 62 as short}]}),
+    <quark:smoker>
 ];
 
 lib.hideArray(hItems);

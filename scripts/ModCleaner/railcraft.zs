@@ -14,6 +14,7 @@ var cItems = [
     <railcraft:rebar>,
     <railcraft:track_parts>,
     <railcraft:circuit>,
+    <railcraft:circuit:1>,
     <railcraft:circuit:2>,
     <railcraft:circuit:3>
     ] as IItemStack[];
@@ -139,7 +140,9 @@ var hItems = [
     <railcraft:track_outfitted>.withTag({railcraft: {rail: "railcraft_electric", kit: "railcraft_coupler"}}),
     <railcraft:track_outfitted>.withTag({railcraft: {rail: "railcraft_iron", kit: "railcraft_coupler"}}),
     <railcraft:track_outfitted>.withTag({railcraft: {rail: "railcraft_reinforced", kit: "railcraft_coupler"}}),
-    <railcraft:track_outfitted>.withTag({railcraft: {rail: "railcraft_strap_iron", kit: "railcraft_coupler"}})
+    <railcraft:track_outfitted>.withTag({railcraft: {rail: "railcraft_strap_iron", kit: "railcraft_coupler"}}),
+    <railcraft:borehead_bronze>,
+    <railcraft:tool_notepad>
 ] as IItemStack[];
 
 lib.hideArray(hItems);
@@ -159,10 +162,26 @@ var tieWood = <railcraft:tie>;
 
 var parts = <railcraft:track_parts>;
 
-
-
+var trackMold = <contenttweaker:track_mold>;
+game.setLocalization("item.contenttweaker.track_mold.name", "Metal Press Mold: Track");
+var ironIng = <ore:ingotIron>;
+var goldIng = <ore:ingotGold>;
+var steelIng = <ore:ingotSteel>;
+var elecIng = <immersiveengineering:metal:7>;
+var copperIng = <ore:ingotCopper>;
+var plateSteel = <ore:plateSteel>;
+var plateIron = <ore:plateIron>;
+var trackParts = <immersiveengineering:material:8>;
 
 var track1 = <minecraft:rail>;
+
+var paper = <minecraft:paper>;
+var blue = <ore:dyeBlue>;
+
+var slab = <immersiveengineering:treated_wood_slab>;
+var reds = <minecraft:redstone>;
+var lead = <minecraft:lead>;
+var pressure = <minecraft:stone_pressure_plate>;
 
 recipes.remove(track1);
 recipes.addShaped("wot_rc_track1", track1 * 32, [
@@ -190,13 +209,31 @@ recipes.addShaped("wot_rc_sTie", tieStone, [
     [stMould, stMould, stMould]
 ]);
 
-var trackMold = <contenttweaker:track_mold>;
-game.setLocalization("item.contenttweaker.track_mold.name", "Metal Press Mold: Track");
-var ironIng = <ore:ingotIron>;
-var goldIng = <ore:ingotGold>;
-var plateSteel = <ore:plateSteel>;
-var plateIron = <ore:plateIron>;
-var trackParts = <immersiveengineering:material:8>;
+mods.immersiveengineering.MetalPress.addRecipe(rail1, ironIng, trackMold, 2000);
+mods.immersiveengineering.MetalPress.addRecipe(rail1, copperIng, trackMold, 2000);
+mods.immersiveengineering.MetalPress.addRecipe(rail1 * 2, steelIng, trackMold, 2000);
+
+recipes.addShaped("wot_rc_rail2", rail2 * 3, [
+    [rail1, reds, goldIng]
+]);
+
+recipes.addShaped("wot_rc_rail3", rail3 * 3, [
+    [rail1, <ore:dustBlaze>, elecIng]
+]);
+
+recipes.addShaped("wot_rc_rail4", rail4 * 3, [
+    [rail1, <ore:dustHOPGraphite>, rail1]
+]);
+
+mods.immersiveengineering.Blueprint.addRecipe("molds", 
+    trackMold, [
+        plateSteel * 5,
+       <immersiveengineering:tool:1>
+       ]
+);
+
+
+//Blueprint: Kits
 
 var kits as IItemStack[] = [
     <railcraft:track_kit:1>.withTag({railcraft: {kit: "railcraft_activator"}}),
@@ -244,11 +281,6 @@ var quantity as int[] = [
     4
 ];
 
-var slab = <immersiveengineering:treated_wood_slab>;
-var reds = <minecraft:redstone>;
-var lead = <minecraft:lead>;
-var pressure = <minecraft:stone_pressure_plate>;
-
 var kitIng as IIngredient[][] = [
     [trackParts, slab, reds * 2],
     [trackParts, slab, reds, rail2],
@@ -273,56 +305,24 @@ var kitIng as IIngredient[][] = [
 ];
 
 for i in 0 to kits.length {
-    recipes.remove(kit[i]);
+    recipes.remove(kits[i]);
     mods.immersiveengineering.Blueprint.addRecipe(
         "Track Kits", kits[i] * quantity[i], kitIng[i]
     );
 }
 
-var paper = <minecraft:paper>;
-var blue = <ore:dyeBlue>;
 
 recipes.addShaped("wot_rc_blueprintKit", <immersiveengineering:blueprint>.withTag({blueprint: "Track Kits"}), [
-    [trackParts, <ore:toolCrowbar>.reuse(), <ore:toolSpikeMaul>.reuse()],
+    [trackParts, reds, slab],
     [blue, blue, blue],
     [paper, paper, paper]
 ]);
 
-recipes.remove(trackParts);
-recipes.addShaped("wot_rc_ieComponent", trackParts * 4, [
-    [plateIron, null , plateIron],
-    [<betterwithmods:material>, <ore:ingotCopper>],
-    [plateIron, null , plateIron]
-]);
-
-var elecIng = <immersiveengineering:metal:7>;
-var copperIng = <ore:ingotCopper>;
-
-mods.immersiveengineering.MetalPress.addRecipe("wot_rc_rail1", rail1, ironIng, trackMold, 2000);
-mods.immersiveengineering.MetalPress.addRecipe("wot_rc_rail1_copper", rail1, copperIng, trackMold, 2000);
-mods.immersiveengineering.MetalPress.addRecipe("wot_rc_rail1_steel", rail1 * 2, steelIng, trackMold, 2000);
-
-recipes.addShaped("wot_rc_rail2", rail2 * 3, [
-    [rail1, reds, goldIng]
-]);
-
-recipes.addShaped("wot_rc_rail3", rail3 * 3, [
-    [rail1, <ore:dustBlaze>, elecIng]
-]);
-
-recipes.addShaped("wot_rc_rail4", rail4 * 3, [
-    [rail1, <ore:dustHOPGraphite>, rail1]
-]);
-
-mods.immersiveengineering.Blueprint.addRecipe("molds", 
-    trackMold, [
-        plateSteel * 5,
-       <immersiveengineering:tool:1>
-       ]
-);
+<immersiveengineering:blueprint>.withTag({blueprint: "Track Kits"}).addTooltip("Make sure to craft a crowbar and a Spike Maul");
 
 
-//RC blueprint: signals
+// Blueprint: Signals
+
 
 var lamp = <railcraft:signal_lamp>;
 recipes.remove(lamp);
@@ -332,11 +332,10 @@ recipes.addShaped("wot_rc_lamp", lamp, [
     [null, <ore:dyeRed>, null]
 ]);
 
-var circuit = <railcraft:circuit:1>;
-
+var circuit = <immersiveengineering:material:27>;
+recipes.replaceAllOccurences(<railcraft:circuit:1>, circuit);
 
 var signals as IItemStack[] = [
-    circuit,
     <railcraft:signal>,
     <railcraft:signal:1>,
     <railcraft:signal:2>,
@@ -359,13 +358,13 @@ var signalsIng as IIngredient[][] = [
     [lamp * 2, trackParts * 2, circuit * 2],
     [lamp * 2, trackParts * 2, circuit * 2],
     [lamp * 2, trackParts * 2, circuit * 2],
-    [ingotIron * 2, reds, <minecraft:repeater>],
-    [ingotIron * 2, reds, circuit * 2],
-    [ingotIron * 2, reds, <minecraft:comparator>],
-    [ingotIron * 2, reds, circuit * 2],
-    [ingotIron * 2, reds, circuit],
-    [ingotIron * 2, <minecraft:comparator>, circuit],
-    [ingotIron * 2, reds, circuit]
+    [ironIng * 2, reds, <minecraft:repeater>],
+    [ironIng * 2, reds, circuit * 2],
+    [ironIng * 2, reds, <minecraft:comparator>],
+    [ironIng * 2, reds, circuit * 2],
+    [ironIng * 2, reds, circuit],
+    [ironIng * 2, <minecraft:comparator>, circuit],
+    [ironIng * 2, reds, circuit]
 ];
 
 recipes.addShaped("wot_rc_blueprintSignals", <immersiveengineering:blueprint>.withTag({blueprint: "Signals"}), [
@@ -417,3 +416,135 @@ for detector in detectors {
         "Detectors", detector, detectorIng
     );
 }
+
+//Motors
+
+val manualSwitch = <railcraft:actuator>;
+val motorSwitch = <railcraft:actuator:1>;
+var steelPart = <immersiveengineering:material:9>;
+
+recipes.remove(manualSwitch);
+recipes.addShaped("wot_rc_manualSwitch", manualSwitch, [
+    [null, <minecraft:lever>, null],
+    [ironIng, trackParts, <minecraft:piston>]
+]);
+
+recipes.remove(motorSwitch);
+recipes.addShaped("wot_rc_motorSwitch", motorSwitch, [
+    [null, circuit, null],
+    [ironIng, steelPart, <minecraft:piston>]
+]);
+
+//Carts
+
+
+//Tunnel Bore
+
+var bore = <railcraft:bore>;
+var lightEng = <immersiveengineering:metal_decoration0:4>;
+var heavyEng = <immersiveengineering:metal_decoration0:5>;
+var scaff = <immersiveengineering:metal_decoration1:1>;
+var cart = <minecraft:minecart>;
+var cartChest = <minecraft:chest_minecart>;
+var oven = <engineersdecor:small_lab_furnace>;
+
+recipes.remove(bore);
+mods.betterwithmods.Anvil.addShaped(bore, [
+    [null, heavyEng, heavyEng, scaff],
+    [null, oven, lightEng, cart],
+    [null, null, lightEng, cart],
+    [null, null, scaff, cartChest]
+]);
+
+var ironHead = <railcraft:borehead_iron>;
+var steelHead = <railcraft:borehead_steel>;
+var diaHead = <railcraft:borehead_diamond>;
+
+recipes.remove(ironHead);
+recipes.remove(steelHead);
+recipes.remove(diaHead);
+
+var diaIng = <betterwithmods:material:45>;
+
+mods.betterwithmods.Anvil.addShaped(ironHead, [
+    [plateIron, plateIron, plateIron, plateIron],
+    [plateIron, scaff, scaff, plateIron],
+    [plateIron, scaff, scaff, plateIron],
+    [plateIron, plateIron, plateIron, plateIron]
+]);
+
+mods.betterwithmods.Anvil.addShaped(steelHead, [
+    [plateSteel, plateSteel, plateSteel, plateSteel],
+    [plateSteel, scaff, scaff, plateSteel],
+    [plateSteel, scaff, scaff, plateSteel],
+    [plateSteel, plateSteel, plateSteel, plateSteel]
+]);
+
+mods.betterwithmods.Anvil.addShaped(diaHead, [
+    [diaIng, plateSteel, diaIng, plateSteel],
+    [plateSteel, scaff, scaff, diaIng],
+    [diaIng, scaff, scaff, plateSteel],
+    [plateSteel, diaIng, plateSteel, diaIng]
+]);
+
+//Carts
+
+var loco = <railcraft:locomotive_steam_solid>.withTag({model: "railcraft:default"});
+var tank = <immersiveengineering:metal_device0:4>;
+var rod = <immersiveengineering:material:2>;
+var chute = <immersiveengineering:conveyor>.withTag({conveyorType: "immersiveengineering:chute_steel"});
+var furnace = <minecraft:furnace>;
+
+recipes.remove(loco);
+recipes.removeByRecipeName("railcraft:locomotive_steam_solid#0$1");
+recipes.addShaped("wot_rc_loco", loco, [
+    [null, chute, null],
+    [tank, tank, furnace],
+    [cart, rod, cart]
+]);
+
+var cargoCart = <railcraft:cart_cargo>;
+
+recipes.remove(cargoCart);
+recipes.removeByRecipeName("railcraft:cart_cargo#0$1");
+recipes.addShaped("wot_rc_cargoCart", cargoCart, [
+    [plateSteel],
+    [cart]
+]);
+
+var trackLayer = <railcraft:mow_track_layer>;
+recipes.remove(trackLayer);
+var trackRemover = <railcraft:mow_track_remover>;
+recipes.remove(trackRemover);
+var trackRelayer = <railcraft:mow_track_relayer>;
+recipes.remove(trackRelayer);
+var undercutter = <railcraft:mow_undercutter>;
+recipes.remove(undercutter);
+
+var chest = <ore:chest>;
+var engineering = <immersiveengineering:metal_decoration0:5>;
+var blockPlacer = <betterwithmods:block_dispenser>;
+
+recipes.addShaped("wot_rc_layer", trackLayer, [
+    [null, <minecraft:piston>, null],
+    [chest, heavyEng, blockPlacer],
+    [null, cart, null]
+]);
+
+recipes.addShaped("wot_rc_remover", trackRemover, [
+    [null, <railcraft:tool_crowbar_steel>, null],
+    [chest, heavyEng, blockPlacer],
+    [null, cart, null]
+]);
+
+recipes.addShaped("wot_rc_relayer", trackRelayer, [
+    [<minecraft:piston>, null, <railcraft:tool_crowbar_steel>],
+    [chest, heavyEng, blockPlacer],
+    [null, cart, null]
+]);
+
+recipes.addShaped("wot_rc_undercutter", undercutter, [
+    [null, <minecraft:sticky_piston>, null],
+    [chest, heavyEng, blockPlacer],
+    [null, cart, null]
+]);

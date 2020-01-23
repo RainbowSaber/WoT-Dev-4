@@ -112,3 +112,76 @@ recipes.addShaped("wot_ie_dynamo", <immersiveengineering:metal_device1:2>, [
 	[<minecraft:redstone>, <immersiveengineering:metal_decoration0>, <minecraft:redstone>],
 	[<minecraft:iron_ingot>, <minecraft:iron_ingot>, <minecraft:iron_ingot>]
 ]);
+
+var ironComp = <immersiveengineering:material:8>;
+var steelComp = <immersiveengineering:material:9>;
+
+mods.immersiveengineering.Blueprint.removeRecipe(ironComp);
+mods.immersiveengineering.Blueprint.removeRecipe(steelComp);
+recipes.remove(ironComp);
+recipes.remove(steelComp);
+var ironPlate = <ore:plateIron>;
+var steelPlate = <ore:plateSteel>;
+var copper = <ore:ingotCopper>;
+var iron = <ore:ingotIron>;
+
+recipes.addShaped("wot_ie_ironComp", ironComp * 2, [
+	[ironPlate, null, ironPlate],
+	[null, copper, null],
+	[ironPlate, null, ironPlate]
+]);
+
+recipes.addShaped("wot_ie_steelComp", steelComp * 2, [
+	[steelPlate, null, steelPlate],
+	[null, copper, null],
+	[steelPlate, null, steelPlate]
+]);
+
+mods.immersiveengineering.Blueprint.addRecipe("components", ironComp * 2, [ironPlate * 2, copper]);
+mods.immersiveengineering.Blueprint.addRecipe("components", steelComp * 2, [steelPlate * 2, copper]);
+
+var sand = <betterwithmods:sand_pile>;
+var clay = <minecraft:clay_ball>;
+var wBucket = <minecraft:water_bucket>;
+var brick = <immersiveengineering:stone_decoration>;
+var bucket = <minecraft:bucket>;
+
+recipes.removeByName("immersiveengineering:stone_decoration/cokebrick");
+
+mods.betterwithmods.Cauldron.builder()
+.buildRecipe([sand * 4, clay * 2, wBucket], [brick])
+.setHeat(1)
+.setPriority(5)
+.build();
+
+mods.betterwithmods.Cauldron.builder()
+.buildRecipe([sand * 8, clay * 4, wBucket], [brick*2])
+.setHeat(1)
+.setPriority(3)
+.build();
+
+mods.betterwithmods.Cauldron.builder()
+.buildRecipe([sand * 16, clay * 8, wBucket], [brick*4])
+.setHeat(1)
+.setPriority(2)
+.build();
+
+var seeds as IItemStack[] = [
+	<betterwithmods:hemp>,
+	<rustic:chili_pepper_seeds>,
+	<rustic:tomato_seeds>,
+	<rustic:grape_stem>
+];
+
+var yield as int[] = [
+	120,
+	80,
+	60,
+	60
+];
+
+for i in 0 to seeds.length {
+	mods.immersiveengineering.Squeezer.addRecipe(null, <liquid:plantoil> * yield[i], seeds[i], 2048);
+}
+
+mods.immersiveengineering.Squeezer.addRecipe(<betterwithmods:dirt_pile>, null, <ore:treeSapling>, 1024);

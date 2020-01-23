@@ -30,7 +30,8 @@ lib.cleanArray(hItems);
 var hideItems as IItemStack[] = [
     <betterwithmods:wooden_broken_gearbox>,
     <betterwithmods:steel_broken_gearbox>,
-    <betterwithmods:steel_saw>
+    <betterwithmods:steel_saw>,
+    <betterwithmods:long_friend>
 ];
 
 lib.hideArray(hideItems);
@@ -90,3 +91,16 @@ mods.betterwithmods.Cauldron.builder()
 //Remove Candles
 
 mods.betterwithmods.Anvil.removeShaped(<betterwithmods:candle_holder>);
+
+//Make redstone easier accessible
+var wBucket = <minecraft:water_bucket>;
+var sulfur = <ore:dustSulfur>;
+var niter = <ore:dustSaltpeter>;
+var stone = <minecraft:stone>;
+var stoneBit = <betterwithmods:siding_rock>.withTag({texture: {Properties: {variant: "stone"}, Name: "minecraft:stone"}});
+
+mods.betterwithmods.Cauldron.builder()
+.buildRecipe([stone * 8, sulfur, niter, wBucket], [stoneBit*8])
+.setHeat(2)
+.setPriority(1)
+.build();

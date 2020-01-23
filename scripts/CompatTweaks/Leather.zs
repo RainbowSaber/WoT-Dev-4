@@ -49,5 +49,25 @@ recipes.addShaped(<quark:backpack>, [
 	[treatedBelt, <betterwithmods:leather_tanned_chest:*>, treatedBelt], 
 	[goldIngot, <rustic:barrel>, goldIngot]
 ]);
+
+var rcGoggle = <railcraft:armor_goggles>;
+var tcGoggle = <thaumcraft:goggles>;
+var pane = <ore:paneGlass>;
+var paneMagic = <thaumcraft:thaumometer>;
+
+
+recipes.remove(rcGoggle);
+recipes.remove(tcGoggle);
+
+recipes.addShaped("wot_leather_rc", rcGoggle, [
+	[pane, <ore:ingotSteel>, pane],
+	[null, treatedBelt, null]
+]);
+
+recipes.addShaped("wot_leather_tc", tcGoggle, [
+	[paneMagic, <ore:ingotBrass>, paneMagic],
+	[null, treatedBelt, null]
+]);
+
 	
 print("Leatherworking Loaded.");
