@@ -46,7 +46,7 @@ var component as IItemStack[] = [
 var compIng as IIngredient[][] = [
     [wafer, rTorch * 2, clock],
     [wafer, rTorch * 3, <ore:gemQuartz>],
-    [wafer, rTorch * 3, <ore:gemEnderBiotite>],
+    [wafer, rTorch * 3, <betterwithmods:urn:8>],
     [wafer, rDust * 2, <minecraft:magma_cream>],
     [rDust, <ore:stickWood>],
     [rDust, <ore:nuggetGold>]
@@ -64,3 +64,35 @@ for i in 0 to component.length {
         "Redstone", component[i], compIng[i]
     );
 }
+
+//Pistons are too expensive
+recipes.remove(<minecraft:piston>);
+recipes.addShaped(<minecraft:piston>,[
+	[<ore:slabWood>,<ore:slabWood>,<ore:slabWood>],
+	[<ore:cobblestone>,<ore:ingotIron>,<ore:cobblestone>],
+	[<ore:cobblestone>,<betterwithmods:material:34>,<ore:cobblestone>]
+]);
+
+var steelDoor = <engineersdoors:door_steel>;
+var steelTrap = <engineersdoors:trapdoor_steel>;
+var ingotSteel = <ore:ingotSteel>
+recipes.removeRecipe(steelDoor);
+recipes.addShaped("wot_steelDoor", steelDoor, [
+    [ingotSteel, ingotSteel, latch],
+    [ingotSteel, ingotSteel, null]
+    [ingotSteel, ingotSteel, latch],
+]);
+
+recipes.removeRecipe(steelTrap);
+recipes.addShaped("wot_steelTrap", steelTrap, [
+    [ingotSteel, ingotSteel, latch],
+    [ingotSteel, ingotSteel, latch]
+]);
+
+//Test for Releay
+var relay = <thaumcraft:redstone_relay>;
+
+recipes.removeRecipe(relay);
+recipes.addShaped("wot_relay", relay, [
+    [ingotSteel]
+]);
