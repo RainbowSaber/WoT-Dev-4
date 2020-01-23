@@ -75,15 +75,16 @@ recipes.addShaped(<minecraft:piston>,[
 
 var steelDoor = <engineersdoors:door_steel>;
 var steelTrap = <engineersdoors:trapdoor_steel>;
-var ingotSteel = <ore:ingotSteel>
-recipes.removeRecipe(steelDoor);
+var ingotSteel = <ore:ingotSteel>;
+
+recipes.remove(steelDoor);
 recipes.addShaped("wot_steelDoor", steelDoor, [
     [ingotSteel, ingotSteel, latch],
-    [ingotSteel, ingotSteel, null]
-    [ingotSteel, ingotSteel, latch],
+    [ingotSteel, ingotSteel, null],
+    [ingotSteel, ingotSteel, latch]
 ]);
 
-recipes.removeRecipe(steelTrap);
+recipes.remove(steelTrap);
 recipes.addShaped("wot_steelTrap", steelTrap, [
     [ingotSteel, ingotSteel, latch],
     [ingotSteel, ingotSteel, latch]
@@ -92,7 +93,16 @@ recipes.addShaped("wot_steelTrap", steelTrap, [
 //Test for Releay
 var relay = <thaumcraft:redstone_relay>;
 
-recipes.removeRecipe(relay);
-recipes.addShaped("wot_relay", relay, [
-    [ingotSteel]
-]);
+recipes.remove(relay);
+mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe(
+    "wot_redstoneRelay",
+    "",
+    10,
+    [<aspect:ordo>],
+    relay, [
+        [null, null, null],
+        [rTorch, <thaumcraft:mechanism_simple>, rTorch],
+        [null, wafer, null]
+    ]
+);
+

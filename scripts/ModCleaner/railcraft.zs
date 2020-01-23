@@ -564,35 +564,35 @@ var fDete = <railcraft:detector:6>;
 var barrel = <immersiveengineering:wooden_device0:1>;
 
 
-recipes.removeRecipe(iLoader);
+recipes.remove(iLoader);
 recipes.addShaped("wot_rc_iLoad", iLoader, [
     [cobblestone, chest, cobblestone],
     [cobblestone, iDete, cobblestone],
     [cobblestone, hopper, cobblestone]
 ]);
 
-recipes.removeRecipe(iUnloader);
+recipes.remove(iUnloader);
 recipes.addShaped("wot_iUnloader", iUnloader, [
     [cobblestone, hopper, cobblestone],
     [cobblestone, iDete, cobblestone],
     [cobblestone, chest, cobblestone]
 ]);
 
-recipes.removeRecipe(fLoader);
+recipes.remove(fLoader);
 recipes.addShaped("wot_fLoader", fLoader, [
     [cobblestone, barrel, cobblestone],
     [cobblestone, fDete, cobblestone],
     [cobblestone, hopper, cobblestone]
 ]);
 
-recipes.removeRecipe(fUnloader);
+recipes.remove(fUnloader);
 recipes.addShaped("wot_fUnloader", fUnloader, [
     [cobblestone, hopper, cobblestone],
     [cobblestone, fDete, cobblestone],
     [cobblestone, barrel, cobblestone]
 ]);
 
-recipes.removeRecipe(trainDisp);
+recipes.remove(trainDisp);
 recipes.addShapeless(trainDisp, [
-    [<railcraft:manipulator:8>, tool_crowbar_steel]
+    <railcraft:manipulator:8>, <railcraft:tool_crowbar_steel>
 ]);
