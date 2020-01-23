@@ -24,13 +24,13 @@
     "vertical_size": 6,
 
     "ore": [
-      {"block": "minecraft:coal_ore", "weight": 25},
-      {"block": "thaumcraft:ore_amber", "weight": 46},
-      {"block": "minecraft:emerald_ore", "weight": 3},
-      {"block": "minecraft:diamond_ore", "weight": 1},
-      {"block": "minecraft:coal_block", "weight": 4},
+      {"block": "minecraft:coal_ore", "weight": 27},
+      {"block": "thaumcraft:ore_amber", "weight": 14},
+      {"block": "minecraft:emerald_ore", "weight": 5},
+      {"block": "minecraft:diamond_ore", "weight": 3},
+      {"block": "minecraft:coal_block", "weight": 8},
       {"block": "minecraft:obsidian", "weight": 10},
-      {"block": "minecraft:bone_block", "weight": 4}
+      {"block": "minecraft:bone_block", "weight": 10}
     ],
     "stone": "minecraft:stone",
     "density": 130,

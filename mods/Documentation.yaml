@@ -63,6 +63,21 @@
       desc: World Stripper is a tool, that allows you to strip all common blocks from an area, exposing all ore and interesting features.
 
 - modid: Simple Ore Samlples
-  feat::
+  feat:
      - name: worldgen
        desc: Adds small ore samples to the surface, indicating a large deposit to be found underground.
+
+- modid: Prospectus
+  feat:
+    -name: worldgen
+     desc: Prospectors picks, crafted like an upside down pickaxe, help identifying veins in the surrounding stone.
+
+- modid: Dynamic Trees
+  feat:
+    -name: worldgen
+     desc: Trees grow from a sapling to a full tree in dynamic stages. The wood obtained upon chopping down the tree, depends on its age and size. 
+
+- modid: Engineers Decor
+  feat:
+    -name: engineering
+     desc: Enhances the capabilities of the base mod by adding further useful items, such as an electric furnace, aswell as plenty decoration blocks such as ladders and steel beams.
