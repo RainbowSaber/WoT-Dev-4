@@ -6,7 +6,6 @@ var hItems as IItemStack[] = [
     <betterwithmods:fertile_farmland>,
     <betterwithmods:arcane_scroll>.withTag({enchant: 0}),
     <betterwithmods:infernal_enchanter>,
-    <betterwithmods:material:47>,
     <minecraft:spawn_egg>.withTag({EntityTag: {id: "betterwithmods:bwm_jungle_spider"}}),
     <minecraft:spawn_egg>.withTag({EntityTag: {id: "betterwithmods:longboi"}}),
     <minecraft:farmland>,

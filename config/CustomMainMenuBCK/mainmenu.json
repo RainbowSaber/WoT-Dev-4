@@ -1,0 +1,39 @@
+{
+    "images":
+    {
+
+		"logo":
+        {
+            "image" : "mainmenu:textures/logo.png",
+            "posX" : 38,
+            "posY" : 35,
+            "width" : 700,
+            "height" : 88,
+            "alignment" : "top_left"
+        }
+	
+	},
+    
+    "texts":
+    {
+        "mojang":
+        {
+            "text" : "Forge #forgeversion# for Minecraft #mcversion# - Copyright Mojang AB. Do not distribute!",
+            "posX" : 2,
+            "posY" : -10,
+            "color" : -1,
+            "alignment" : "bottom_left"
+        },
+        
+
+    },
+    
+    "other":
+    {
+		"background":
+		{
+			"image" : "mainmenu:textures/bg.png",
+			"mode" : "stretch"
+		}
+    }
+}

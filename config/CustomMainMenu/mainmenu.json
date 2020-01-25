@@ -1,24 +1,48 @@
 {
     "images":
     {
-        "title":
+
+
+
+        "grey":
         {
-            "image" : "custommainmenu:textures/gui/minecraft.png",
-            "posX" : -137,
-            "posY" : 30,
-            "width" : 512,
-            "height" : 512,
-            "alignment" : "top_center"
+            "image" : "mainmenu:textures/bg_menu_blue.png",
+            "posX" : 95,
+            "posY" : -80,
+            "width" : 200,
+            "height" : 1500,
+            "alignment" : "top_left"
         },
-        
-        "edition":
+
+
+        "black":
         {
-            "image" : "custommainmenu:textures/gui/edition.png",
-            "posX" : -49,
-            "posY" : 67,
-            "width" : 128,
-            "height" : 16,
-            "alignment" : "top_center"
+            "image" : "mainmenu:textures/bg_menu.png",
+            "posX" : 95,
+            "posY" : -80,
+            "width" : 200,
+            "height" : 1500,
+            "alignment" : "top_left"
+        },
+
+        "logo":
+        {
+            "image" : "mainmenu:textures/logo.png",
+            "posX" : 295,
+            "posY" : 80,
+            "width" : 700,
+            "height" : 90,
+            "alignment" : "top_left"
+        },
+
+        "icon":
+        {
+            "image" : "mainmenu:textures/waterwheel_bp.png",
+            "posX" : 107,
+            "posY" : 35,
+            "width" : 175,
+            "height" : 175,
+            "alignment" : "top_left"
         }
     },
     
@@ -27,98 +51,171 @@
         "singleplayer":
         {
             "text" : "menu.singleplayer",
-            "posX" : -100,
-            "posY" : 48,
-            "width" : 200,
-            "height" : 20,
-            "action" : 
+            "normalTextColor" : 12303291,
+            "hoverTextColor" : 3125670,
+            "texture" : "mainmenu:textures/btn.png",
+            "posX" : 97,
+            "posY" : -40,
+            "width" : 196,
+            "height" : 30,
+            "imageWidth" : 100,
+            "imageHeight" : 50,
+            "alignment" : "left_center",
+            "action" :
             {
                 "type" : "openGui",
                 "gui" : "singleplayer"
             }
         },
-        
+
         "multiplayer":
         {
             "text" : "menu.multiplayer",
-            "posX" : -100,
-            "posY" : 72,
-            "width" : 200,
-            "height" : 20,
-            "action" : 
+            "normalTextColor" : 12303291,
+            "hoverTextColor" : 3125670,
+            "texture" : "mainmenu:textures/btn.png",
+            "posX" : 97,
+            "posY" : -10,
+            "width" : 196,
+            "height" : 30,
+            "imageWidth" : 100,
+            "imageHeight" : 50,
+            "alignment" : "left_center",
+            "action" :
             {
                 "type" : "openGui",
                 "gui" : "multiplayer"
             }
         },
-        
+
         "mods":
         {
-            "text" : "fml.menu.mods",
-            "posX" : -100,
-            "posY" : 96,
-            "width" : 200,
+            "text" : "Mods (#modsloaded#/#modsactive#)",
+            "normalTextColor" : 6710886,
+            "hoverTextColor" : 3125670,
+            "texture" : "mainmenu:textures/btn.png",
+            "posX" : 97,
+            "posY" : 140,
+            "width" : 196,
             "height" : 20,
-            "action" : 
+            "imageWidth" : 100,
+            "imageHeight" : 50,
+            "alignment" : "left_center",
+            "action" :
             {
                 "type" : "openGui",
                 "gui" : "mods"
             }
         },
-            
+
         "options":
         {
             "text" : "menu.options",
-            "posX" : -100,
-            "posY" : 132,
-            "width" : 98,
+            "normalTextColor" : 12303291,
+            "hoverTextColor" : 3125670,
+            "texture" : "mainmenu:textures/btn.png",
+            "posX" : 97,
+            "posY" : 30,
+            "width" : 196,
             "height" : 20,
-            "action" : 
+            "imageWidth" : 100,
+            "imageHeight" : 50,
+            "alignment" : "left_center",
+            "action" :
             {
                 "type" : "openGui",
                 "gui" : "options"
             }
         },
-        
+
         "quit":
         {
             "text" : "menu.quit",
-            "posX" : 2,
-            "posY" : 132,
-            "width" : 98,
+            "normalTextColor" : 16729156,
+            "hoverTextColor" : 14483456,
+            "texture" : "mainmenu:textures/btn.png",
+            "posX" : 97,
+            "posY" : 110,
+            "width" : 196,
             "height" : 20,
-            "action" : 
+            "imageWidth" : 100,
+            "imageHeight" : 50,
+            "alignment" : "left_center",
+            "hoverText" : "Hey, come back!",
+            "action" :
             {
                 "type" : "quit"
             }
         },
-        
+
         "language":
         {
-            "text" : "",
-            "posX" : -124,
-            "posY" : 132,
-            "width" : 20,
+            "text" : "options.language",
+            "texture" : "mainmenu:textures/btn.png",
+            "posX" : 97,
+            "posY" : 50,
+            "width" : 196,
             "height" : 20,
-            "action" : 
+            "imageWidth" : 100,
+            "imageHeight" : 50,
+            "alignment" : "left_center",
+            "action" :
             {
                 "type" : "openGui",
                 "gui" : "languages"
             }
         },
-        
-        "refresh":
+
+        "issues":
         {
-            "text" : "",
-            "posX" : -154,
-            "posY" : 132,
-            "width" : 20,
+            "text" : "Report issue",
+            "texture" : "mainmenu:textures/btn.png",
+            "posX" : 97,
+            "posY" : 70,
+            "width" : 196,
             "height" : 20,
-            "texture" : "custommainmenu:textures/gui/buttons.png",
-            "action" : 
+            "imageWidth" : 100,
+            "imageHeight" : 50,
+            "alignment" : "left_center",
+            "action" :
             {
-                "type" : "refresh"
+                "type" : "openLink",
+                "link" : "https://github.com/RainbowSaber/WoT-Dev-4/issues"
             }
+        },
+
+        "wiki":
+        {
+            "text" : "Modpack Wiki",
+            "texture" : "mainmenu:textures/btn.png",
+            "posX" : 97,
+            "posY" : 90,
+            "width" : 196,
+            "height" : 20,
+            "imageWidth" : 100,
+            "imageHeight" : 50,
+            "alignment" : "left_center",
+            "action" :
+            {
+                "type" : "openLink",
+                "link" : "https://github.com/RainbowSaber/WoT-Dev-4/wiki"
+            }
+        },
+
+        "versionChecker":
+        {
+            "text" : "Version-Checker",
+            "normalTextColor" : 6710886,
+            "hoverTextColor" : 3125670,
+            "texture" : "mainmenu:textures/btn.png",
+            "posX" : 193,
+            "posY" : 100,
+            "width" : 1001,
+            "height" : 20,
+            "imageWidth" : 100,
+            "imageHeight" : 50,
+            "alignment" : "left_center",
+            "wrappedButton" : 404
         }
     },
     
@@ -126,47 +223,34 @@
     {
         "mojang":
         {
-            "text" : "Copyright Mojang AB. Do not distribute!",
-            "hoverText" : "§nCopyright Mojang AB. Do not distribute!",
-            "posX" : -197,
-            "posY" : -10,
-            "color" : -1,
-            "alignment" : "bottom_right",
-            "action" : 
-            {
-                "type" : "openGui",
-                "gui" : "credits"
-            }
-        },
-        
-        "fml":
-        {
-            "text" : "",
-            "posX" : 2,
-            "posY" : -40,
+            "text" : "Forge #forgeversion# for Minecraft #mcversion# - Copyright Mojang AB. Do not distribute!",
+            "posX" : 300,
+            "posY" : -15,
             "color" : -1,
             "alignment" : "bottom_left"
+        },
+
+        "packTxt":
+        {
+            "text" : "WoT - 4.0.0 \nby ferdischabel",
+            "posX" : 2,
+            "posY" : 5,
+            "color" : -1,
+            "alignment" : "top_left"
         }
     },
     
     "other":
     {
-        "splash-text":
-        {
-            "posX" : 90,
-            "posY" : 70,
-            "color" : -256,
-            "alignment" : "top_center",
-            "texts" : "file:minecraft:texts/splashes.txt"
-        },
-        
+
         "panorama":
         {
-            "images" : "minecraft:textures/gui/title/background/panorama_%c.png",
+            "images" : "mainmenu:textures/bg/panorama_%c.png",
             "animate" : true,
-            "animationSpeed" : 1,
+            "animationSpeed" : 2,
             "blur" : true,
-            "gradient" : true
+            "position" : 10000,
+            "gradient" : false
         }
     }
 }

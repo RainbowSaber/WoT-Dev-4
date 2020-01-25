@@ -1,10 +1,43 @@
 {
   "mods": [
     {
-      "id": "example",
-      "name": "Example Mod",
+      "id": "betterfoliage",
+      "name": "Better Foliage",
+      "desc": "Better Foliage is a Forge mod that will make your Minecraft worlds more impressive, mainly by improving how vegetation looks. It is fully compatible with other visual enhancement mods (Optifine, Shaders Mod, Colored Lights Core). The mod is 100% cosmetic and client-only. It has no effect on the server, and Better Foliage features in the world can not be interacted with.",
+      "website": "https://www.curseforge.com/minecraft/mc-mods/better-foliage",
+      "category": "",
+      "group": "",
+      "base": true,
+      "extraMods": [],
+      "copyFiles": []
+    },
+
+    {
+      "id": "dynamiclights",
+      "name": "Dynamic Lights",
+      "desc": "This modification makes 'shining' items (default: Torch, Glowstone, Glowdust, Lit Pumpkin, Redstone, Lava Bucket, powered Minecart) illuminate everything around them if\n\n\n1) the player has them equipped (in hand/armor)\n2) they are dropped on the ground\n3) another player has them equipped in Multiplayer",
+      "website": "https://www.curseforge.com/minecraft/mc-mods/dynamic-lightsbetter",
+      "category": "",
+      "group": "",
+      "base": true,
+      "extraMods": ["dynamiclights_onfire",
+        "dynamiclights_creepers",
+        "dynamiclights_dropitems",
+        "dynamiclights_entityclasses",
+        "dynamiclights_mobequipment",
+        "dynamiclights_flamearrows",
+        "dynamiclights_floodlights",
+        "dynamiclights_otherplayers",
+        "dynamiclights_theplayer"
+      ],
+      "copyFiles": []
+    },
+
+    {
+      "id": "dsurround",
+      "name": "Dynamic Surround",
       "desc": "This is the example for a mod template. id is the mod ID, which needs to be set properly. name and desc are just for display in the GUI. website is optional for a link to the mod\u0027s website. base is whether it should come enabled by default or not.",
-      "website": "https://vazkii.us/",
+      "website": "https://www.curseforge.com/minecraft/mc-mods/dynamic-surroundings/screenshots",
       "category": "",
       "group": "",
       "base": true,
