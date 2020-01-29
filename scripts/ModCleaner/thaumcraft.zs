@@ -74,7 +74,6 @@ var hItems as IItemStack[] = [
     <thaumcraft:celestial_notes:11>,
     <thaumcraft:celestial_notes:12>,
     <thaumcraft:loot_bag>,
-    <thaumcraft:salis_mundus>,
     <thaumcraft:void_seed>,
     <thaumcraft:mind:1>,
     <thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "aer"}]}),
@@ -279,7 +278,17 @@ var hItems as IItemStack[] = [
     <thaumcraft:elemental_sword>.withTag({infench: [{lvl: 2 as short, id: 5 as short}]}),
     <thaumcraft:elemental_shovel>.withTag({infench: [{lvl: 1 as short, id: 1 as short}]}),
     <thaumcraft:elemental_pick>.withTag({infench: [{lvl: 1 as short, id: 4 as short}, {lvl: 2 as short, id: 3 as short}]}),
-    <thaumcraft:turret:2>
+    <thaumcraft:turret:2>,
+    <thaumcraft:plate:1>,
+    <thaumcraft:crystal_aer>,
+    <thaumcraft:crystal_ignis>,
+    <thaumcraft:crystal_aqua>,
+    <thaumcraft:crystal_terra>,
+    <thaumcraft:crystal_ordo>,
+    <thaumcraft:crystal_perditio>,
+    <thaumcraft:crystal_vitium>
 ];
 
 lib.hideArray(hItems);
+
+<ore:ironPlate>.remove(<thaumcraft:plate:1>);

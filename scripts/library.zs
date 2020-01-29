@@ -11,7 +11,7 @@ function cleanArray(items as IItemStack[]) {
 
 function hideArray(items as IItemStack[]) {
     for item in items {
-        mods.jei.JEI.removeAndHide(item);
+        mods.jei.JEI.hide(item);
     }
 }
 

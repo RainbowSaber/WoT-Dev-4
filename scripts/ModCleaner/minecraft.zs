@@ -116,8 +116,6 @@ var hItems as IItemStack[] =
     <coroutil:repairing_block>,
     <coroutil:item_repairing_gel>,
     <hammercore:manual>,
-    <gravelores:coal_gravel_ore>,
-    <gravelores:iron_gravel_ore>,
     <hammercore:iron_bordered_cobblestone>,
     <hammercore:gold_bordered_cobblestone>,
     <hammercore:diamond_bordered_cobblestone>,

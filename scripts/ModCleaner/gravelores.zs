@@ -16,6 +16,3 @@ var hItems as IItemStack[] = [
 ];
 
 lib.cleanArray(hItems);
-
-furnace.remove(<minecraft:iron_nugget>, <gravelores:iron_gravel_ore>);
-furnace.addRecipe(<minecraft:iron_nugget>, <gravelores:iron_gravel_ore>);

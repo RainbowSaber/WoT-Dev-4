@@ -66,21 +66,19 @@ val doors = [
 ] as IItemStack[];
 
 val trapdoors = [
-
-	<minecraft:trapdoor>,
-
-	<engineersdoors:trapdoor_treated>
+    <quark:spruce_trapdoor>,
+    <quark:birch_trapdoor>,
+    <minecraft:trapdoor>,
+    <quark:acacia_trapdoor>,
+    <quark:jungle_trapdoor>,
+    <quark:dark_oak_trapdoor>,
+    <engineersdoors:trapdoor_treated>
 ] as IItemStack[];
 
 for i in 0 to doors.length {
 	//Door
 	recipes.remove(doors[i]);
-    /*
-	recipes.addShaped(doors[i], [
-		[planks[i], planks[i], null],
-		[planks[i], planks[i], null],
-		[planks[i], planks[i], null]
-	]);*/
+
 	recipes.addShaped(doors[i], [
 		[sidings[i], sidings[i]],
 		[sidings[i], sidings[i]],
@@ -90,11 +88,7 @@ for i in 0 to doors.length {
 for j in 0 to trapdoors.length {
 	//Trapdoor 
 	recipes.remove(trapdoors[j]);
-	recipes.addShaped(trapdoors[j], [
-		[null, null, null],
-		[planks[j], planks[j], null],
-		[planks[j], planks[j], null]
-	]);
+
 	recipes.addShaped(trapdoors[j]*2, [
 		[null, null, null],
 		[sidings[j], sidings[j], null],
@@ -249,5 +243,40 @@ for i in 6 to chairs.length {
 		[mold, null, mold]
 	]);
 }
+
+//Bark Recipes
+
+var barks as IItemStack[] = [
+    <betterwithmods:bark>,
+    <betterwithmods:bark:1>,
+    <betterwithmods:bark:2>,
+    <betterwithmods:bark:3>,
+    <betterwithmods:bark:4>,
+    <betterwithmods:bark:5>
+];
+
+var bBlocks as IItemStack[] = [
+    <quark:bark>,
+    <quark:bark:1>,
+    <quark:bark:2>,
+    <quark:bark:3>,
+    <quark:bark:4>,
+    <quark:bark:5>
+];
+
+for i in 0 to barks.length {
+    var bark = barks[i];
+    var bBlock = bBlocks[i];
+    recipes.remove(bBlock * 9);
+
+    recipes.addShaped(bBlock * 4, [
+        [bark, bark],
+        [bark, bark]
+    ]);
+
+
+}
+
+
 
 print("Carpentry Loaded.");
