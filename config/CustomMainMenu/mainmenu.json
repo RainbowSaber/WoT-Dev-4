@@ -68,25 +68,6 @@
             }
         },
 
-        "reload":
-        {
-            "text" : "menu.singleplayer",
-            "normalTextColor" : 12303291,
-            "hoverTextColor" : 3125670,
-            "texture" : "mainmenu:textures/btn.png",
-            "posX" : 497,
-            "posY" : -40,
-            "width" : 196,
-            "height" : 30,
-            "imageWidth" : 100,
-            "imageHeight" : 50,
-            "alignment" : "left_center",
-            "action" :
-            {
-                "type" : "refresh"
-            }
-        },
-
         "multiplayer":
         {
             "text" : "menu.multiplayer",
