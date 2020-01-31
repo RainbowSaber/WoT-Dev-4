@@ -100,9 +100,15 @@ var shaft = <betterwithmods:material:36>;
 //BWM Progression locked behind the Shaft
 recipes.remove(<immersiveengineering:tool>);
 recipes.addShaped("immersiveengineering_tool/hammer", <immersiveengineering:tool>, [
-	[null, <ore:ingotIron>, <ore:slimeball>], 
+	[null, <ore:ingotIron>, null],
 	[null, shaft, <ore:ingotIron>], 
 	[shaft, null, null]
+]);
+
+recipes.remove(<immersiveengineering:tool:1>);
+recipes.addShaped("wot_<immersiveengineering:toolWire>", <immersiveengineering:tool:1>, [
+    [<ore:ingotIron>, shaft, null],
+    [shaft, null, null]
 ]);
 
 //Kinetic Dynamo
@@ -149,22 +155,11 @@ var bucket = <minecraft:bucket>;
 recipes.removeByRecipeName("immersiveengineering:stone_decoration/cokebrick");
 
 mods.betterwithmods.Cauldron.builder()
-.buildRecipe([sand * 4, clay * 2, wBucket], [brick])
+.buildRecipe([sand * 12, clay * 6], [brick*3])
 .setHeat(1)
 .setPriority(5)
 .build();
 
-mods.betterwithmods.Cauldron.builder()
-.buildRecipe([sand * 8, clay * 4, wBucket], [brick*2])
-.setHeat(1)
-.setPriority(3)
-.build();
-
-mods.betterwithmods.Cauldron.builder()
-.buildRecipe([sand * 16, clay * 8, wBucket], [brick*4])
-.setHeat(1)
-.setPriority(2)
-.build();
 
 var seeds as IItemStack[] = [
 	<betterwithmods:hemp>,
