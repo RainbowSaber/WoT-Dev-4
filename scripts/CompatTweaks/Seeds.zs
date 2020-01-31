@@ -36,8 +36,8 @@ for item in saplings {
 
 // 25% of drops
 val commonSeeds = [
-	<minecraft:wheat_seeds>,
-	<betterwithmods:hemp>
+	<betterwithmods:hemp>,
+	<minecraft:wheat_seeds>
 ] as IItemStack[];
 val commonWeight= 1*((totalWeight*0.25)/commonSeeds.length);
 for item in commonSeeds {
@@ -79,12 +79,7 @@ for item in soil {
 	vanilla.seeds.addSeed(item % soilWeight);
 }
 
-// Returns a list of all seeds including percentiles
-val seedModded = vanilla.seeds.seeds;
 
-for item in seedModded {
-    print("Item: " ~ item.stack.displayName ~ " || Chance: " ~ item.percent ~ "%");
-}
 
 // Ingame Tips/Docu
 <minecraft:iron_hoe>.addTooltip("Use on untilled dirt to collect seeds");
