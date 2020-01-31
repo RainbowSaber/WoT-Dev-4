@@ -3,23 +3,17 @@ import crafttweaker.item.IItemStack;
 print("Seeds Loading ...");
 
 //val seedList = vanilla.seeds.seeds;
-val seedList = [
-	<betterwithmods:hemp>,
-	<rustic:chili_pepper_seeds>,
-	<minecraft:wheat_seeds>,
-	<rustic:tomato_seeds>,
-	<immersiveengineering:seed>
-] as IItemStack[];
+val seedList = vanilla.seeds.seeds;
 
 // Cleans the Current Seed List
 
-for seed in seedList {
-	vanilla.seeds.removeSeed(seed);
+for item in seedList {
+	vanilla.seeds.removeSeed(item.stack);
 }
 
-val totalWeight = 50000.0;
+val totalWeight = 1000.0;
 
-// 10% of drops
+// 8% of drops
 val saplings = [
 	<dynamictrees:appleseed>,
 	<dynamictrees:oakseed>,
@@ -35,53 +29,52 @@ val saplings = [
 	<rustic:oliveseed>,
 	<rustic:apple_seeds>
 ] as IItemStack[];
-val saplingWeight = 1*((totalWeight*0.1)/saplings.length);
+val saplingWeight = 1*((totalWeight*0.08)/saplings.length);
 for item in saplings {
 	vanilla.seeds.addSeed(item % saplingWeight);
 }
 
-// 40% of drops
+// 25% of drops
 val commonSeeds = [
 	<minecraft:wheat_seeds>,
 	<betterwithmods:hemp>
 ] as IItemStack[];
-val commonWeight= 1*((totalWeight*0.4)/commonSeeds.length);
+val commonWeight= 1*((totalWeight*0.25)/commonSeeds.length);
 for item in commonSeeds {
 	vanilla.seeds.addSeed(item % commonWeight);
 }
 
-// 15% of drops
+// 10% of drops
 val seeds = [
-	<minecraft:wheat_seeds>,
-	<betterwithmods:hemp>,
 	<rustic:tomato_seeds>,
 	<minecraft:carrot>,
 	<minecraft:potato>
 ] as IItemStack[];
-val seedWeight= 1*((totalWeight*0.15)/seeds.length);
+val seedWeight= 1*((totalWeight*0.10)/seeds.length);
 for item in seeds {
 	vanilla.seeds.addSeed(item % seedWeight);
 }
 
-// 10% of drops
+// 7% of drops
 val rareSeed = [
 	<minecraft:pumpkin_seeds>,
 	<minecraft:melon_seeds>,
 	<minecraft:beetroot_seeds>,
 	<rustic:chili_pepper_seeds>
 ] as IItemStack[];
-val rareWeight = 1*((totalWeight*0.10)/rareSeed.length);
+val rareWeight = 1*((totalWeight*0.07)/rareSeed.length);
 for item in rareSeed {
 	vanilla.seeds.addSeed(item % rareWeight);
 }
 
-// 25% of drops
+// 50% of drops
 val soil = [
 	<betterwithmods:dirt_pile>,
-	<minecraft:dye:15>,
 	<minecraft:flint>,
+	<betterwithmods:sand_pile>,
+	<betterwithmods:gravel_pile>
 ] as IItemStack[];
-val soilWeight = 1*((totalWeight*0.25)/soil.length);
+val soilWeight = 1*((totalWeight*0.5)/soil.length);
 for item in soil {
 	vanilla.seeds.addSeed(item % soilWeight);
 }
