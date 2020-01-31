@@ -273,10 +273,25 @@ for i in 0 to barks.length {
         [bark, bark],
         [bark, bark]
     ]);
-
-
 }
 
+
+// Changes Thaumcraft table to fall in line
+
+recipes.remove(<thaumcraft:table_wood>);
+recipes.addShaped("wot_<thaumcraft:table_wood>", <thaumcraft:table_wood> * 2, [
+    [sidings[10], sidings[10], sidings[10]],
+    [moulding[10], null, moulding[10]]
+]);
+
+var stoneSid = <betterwithmods:siding_rock>.withTag({texture: {Properties: {variant: "stone"}, Name: "minecraft:stone"}});
+var stoneMold = <betterwithmods:moulding_rock>.withTag({texture: {Properties: {variant: "stone"}, Name: "minecraft:stone"}});
+
+recipes.remove(<thaumcraft:table_stone>);
+recipes.addShaped("wot_<thaumcraft:table_stone>", <thaumcraft:table_stone> * 2, [
+    [stoneSid, stoneSid, stoneSid],
+    [stoneMold, null, stoneMold]
+]);
 
 
 print("Carpentry Loaded.");
