@@ -37,6 +37,14 @@ recipes.addShaped(windBlade, [
 	[treatStick, treatStick, null]
 ]);
 
+recipes.remove(windSail);
+recipes.remove(windSail);
+recipes.addShaped("wot_windSail", windSail * 2, [
+    [, hempClothIE, hempClothIE],
+    [hempClothIE, hempClothIE, hempClothIE],
+    [, hempClothIE, ]
+]);
+
 basicMill.displayName = "Basic Windmill";
 recipes.remove(basicMill);
 recipes.addShaped(basicMill, [

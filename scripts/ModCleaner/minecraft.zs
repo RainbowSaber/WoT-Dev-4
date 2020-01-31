@@ -149,7 +149,11 @@ var hItems as IItemStack[] =
     <minecraft:command_block_minecart>,
     <rustic:apple_seeds>,
     <rustic:sapling_apple>,
-    <rustic:leaves_apple>
+    <rustic:leaves_apple>,
+    <base:wrench>,
+    <baubles:ring>,
+    <carryon:tile_item>,
+    <carryon:entity_item>
 ];
 
 lib.hideArray(hItems);
