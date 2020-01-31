@@ -224,7 +224,7 @@
         {"block": "gravelores:iron_gravel_ore"}
       ],
       "max_depth": 30,
-      "rarity": 5
+      "rarity": 7
     }
   },
 
@@ -235,8 +235,8 @@
 
     "ore": [
       {"block": "gravelores:coal_gravel_ore", "weight": 25},
-      {"block": "minecraft:gravel", "weight": 20},
-      {"block": "thaumcraft:ore_amber", "weight": 7}
+      {"block": "minecraft:gravel", "weight": 18},
+      {"block": "thaumcraft:ore_amber", "weight": 5}
 
     ],
     "stone": "minecraft:stone",
