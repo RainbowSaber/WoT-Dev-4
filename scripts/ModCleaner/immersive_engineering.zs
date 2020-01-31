@@ -106,7 +106,7 @@ recipes.addShaped("immersiveengineering_tool/hammer", <immersiveengineering:tool
 ]);
 
 recipes.remove(<immersiveengineering:tool:1>);
-recipes.addShaped("wot_<immersiveengineering:toolWire>", <immersiveengineering:tool:1>, [
+recipes.addShaped("wot_<immersiveengineering_toolWire>", <immersiveengineering:tool:1>, [
     [<ore:ingotIron>, shaft, null],
     [shaft, null, null]
 ]);
