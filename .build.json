@@ -1,0 +1,7 @@
+{
+  "packAuthor": "ferdischabel",
+  "minecraftVersion": "1.12.2",
+  "modLoader": "forge",
+  "modLoaderVersion": "14.23.5.2847",
+  "includes": ["config", "resources", "scripts","playerschoice.marker"]
+}
