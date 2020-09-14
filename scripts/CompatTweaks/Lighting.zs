@@ -10,6 +10,7 @@ val paneGlass = <ore:paneGlass>;
 val framedGlass = <quark:framed_glass>;
 val plateIron = <immersiveengineering:metal:39>;
 val plateGold = <immersiveengineering:metal:40>;
+val plateSilver = <immersiveengineering:metal:33>;
 val paper = <minecraft:paper>;
 val stick = <minecraft:stick>;
 val latch = <betterwithmods:material:34>;
@@ -34,9 +35,21 @@ recipes.addShaped(<rustic:golden_lantern> * 4, [
     [paneGlass], [torch], [plateGold]
 ]);
 
+recipes.remove(<rustic:silver_lantern>);
+recipes.addShaped(<rustic:silver_lantern> * 4, [
+    [paneGlass], [torch], [plateSilver]
+]);
+
 recipes.remove(<rusticthaumaturgy:lantern_brass>);
 recipes.addShaped(<rusticthaumaturgy:lantern_brass> * 4, [
     [paneGlass], [torch], [<thaumcraft:plate>]
+]);
+
+recipes.remove(<rustic:lantern_wood>);
+recipes.addShaped("wot_<rustic:lantern_wood>", <rustic:lantern_wood> * 2, [
+    [null, <ore:slabWood>, null],
+    [paneGlass, torch, paneGlass],
+    [null, <ore:slabWood>, null]
 ]);
 
 //IE lamps
@@ -48,7 +61,14 @@ recipes.addShaped(lanternIE * 2, [
 	[null, plateIron, null]
 ]);
 
-//Quark lampsr
+recipes.remove(<engineersdecor:iron_inset_light>);
+recipes.addShaped("wot_<engineersdecor:iron_inset_light>", <engineersdecor:iron_inset_light> * 4, [
+    [null, null, null],
+    [paneGlass, paneGlass, paneGlass],
+    [plateIron, filament, plateIron]
+]);
+
+//Quark lamps
 
 recipes.remove(lanternPaper);
 recipes.addShaped(lanternPaper * 2, [
@@ -78,6 +98,9 @@ recipes.addShapeless(<rustic:candle>, [candle, <minecraft:iron_ingot>]);
 
 recipes.remove(<rustic:candle_gold>);
 recipes.addShapeless(<rustic:candle_gold>, [candle, <minecraft:gold_ingot>]);
+
+recipes.remove(<rustic:candle_silver>);
+recipes.addShapeless(<rustic:candle_silver>, [candle, <ore:ingotSilver>]);
 
 recipes.remove(<rusticthaumaturgy:candle_brass>);
 recipes.addShapeless(<rusticthaumaturgy:candle_brass>, [candle, <thaumcraft:ingot:2>]);

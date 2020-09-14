@@ -84,10 +84,7 @@ var hItems as IItemStack[] =
 
 lib.hideArray(hItems);
 
-var dItems as IItemStack[] = [
-	<engineersdecor:treated_wood_broad_windowsill>
-];
-lib.cleanArray(dItems);
+
 
 
 mods.immersiveengineering.Crusher.addRecipe(

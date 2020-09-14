@@ -2,7 +2,29 @@ import crafttweaker.item.IItemStack;
 
 print("Carpentry Loading ...");
 
-//Wooden Doors
+// Treated OreDict
+val treatedCorner = <ore:cornerTreatedWood>;
+val treatedMoulding = <ore:mouldingTreatedWood>;
+val treatedSlab = <ore:slabTreatedWood>;
+
+treatedCorner.addItems([
+    <betterwithmods:siding_wood>.withTag({texture: {Properties: {type: "vertical"}, Name: "immersiveengineering:treated_wood"}}),
+    <betterwithmods:siding_wood>.withTag({texture: {Properties: {type: "packaged"}, Name: "immersiveengineering:treated_wood"}}),
+    <betterwithmods:siding_wood>.withTag({texture: {Properties: {type: "horizontal"}, Name: "immersiveengineering:treated_wood"}})
+    ]);
+
+treatedMoulding.addItems([
+    <betterwithmods:moulding_wood>.withTag({texture: {Properties: {type: "horizontal"}, Name: "immersiveengineering:treated_wood"}}),
+    <betterwithmods:moulding_wood>.withTag({texture: {Properties: {type: "vertical"}, Name: "immersiveengineering:treated_wood"}}),
+    <betterwithmods:moulding_wood>.withTag({texture: {Properties: {type: "packaged"}, Name: "immersiveengineering:treated_wood"}})
+    ]);
+
+treatedSlab.addItems([
+    <betterwithmods:siding_wood>.withTag({texture: {Properties: {type: "vertical"}, Name: "immersiveengineering:treated_wood"}}),
+    <betterwithmods:siding_wood>.withTag({texture: {Properties: {type: "packaged"}, Name: "immersiveengineering:treated_wood"}}),
+    <betterwithmods:siding_wood>.withTag({texture: {Properties: {type: "horizontal"}, Name: "immersiveengineering:treated_wood"}})
+  ]);
+
 
 val planks = [
 	<minecraft:planks:1>,
@@ -279,7 +301,7 @@ for i in 0 to barks.length {
 // Changes Thaumcraft table to fall in line
 
 recipes.remove(<thaumcraft:table_wood>);
-recipes.addShaped("wot_<thaumcraft_tableWood>", <thaumcraft:table_wood> * 2, [
+recipes.addShaped("wot_<thaumcraft_tableWood>", <thaumcraft:table_wood> * 4, [
     [sidings[10], sidings[10], sidings[10]],
     [moulding[10], null, moulding[10]]
 ]);
@@ -288,10 +310,65 @@ var stoneSid = <betterwithmods:siding_rock>.withTag({texture: {Properties: {vari
 var stoneMold = <betterwithmods:moulding_rock>.withTag({texture: {Properties: {variant: "stone"}, Name: "minecraft:stone"}});
 
 recipes.remove(<thaumcraft:table_stone>);
-recipes.addShaped("wot_<thaumcraft_tableStone>", <thaumcraft:table_stone> * 2, [
+recipes.addShaped("wot_<thaumcraft_tableStone>", <thaumcraft:table_stone> * 4, [
     [stoneSid, stoneSid, stoneSid],
     [stoneMold, null, stoneMold]
 ]);
+
+// IE tables
+recipes.remove(<engineersdecor:treated_wood_table>);
+recipes.addShaped("wot_<engineersdecor:treated_wood_table>", <engineersdecor:treated_wood_table> * 4, [
+    [treatedSlab, treatedSlab, treatedSlab],
+    [treatedMoulding, null, treatedMoulding]
+]);
+
+recipes.remove(<engineersdecor:treated_wood_side_table>);
+recipes.addShaped("wot_<engineersdecor:treated_wood_side_table>", <engineersdecor:treated_wood_side_table> * 4, [
+    [treatedSlab, treatedSlab, treatedSlab],
+    [null, treatedMoulding, null],
+    [null, treatedMoulding, null]
+]);
+
+recipes.remove(<engineersdecor:treated_wood_stool>);
+recipes.addShaped("wot_<engineersdecor:treated_wood_stool>", <engineersdecor:treated_wood_stool> * 2, [
+    [treatedSlab, treatedSlab, treatedSlab],
+    [null, treatedMoulding, null],
+    [null, treatedMoulding, null]
+]);
+
+//Wooden Poles
+
+recipes.remove(<engineersdecor:treated_wood_pole>);
+recipes.addShaped("wot_<engineersdecor:treated_wood_pole>", <engineersdecor:treated_wood_pole> * 3, [
+    [null, treatedMoulding, null],
+    [null, treatedMoulding, null],
+    [null, treatedMoulding, null]
+]);
+
+recipes.remove(<engineersdecor:treated_wood_pole_support>);
+recipes.addShapeless("wot_<engineersdecor:treated_wood_pole_support>", <engineersdecor:treated_wood_pole_support>,
+    [<engineersdecor:treated_wood_pole>, treatedCorner]
+);
+
+recipes.remove(<engineersdecor:treated_wood_pole_head>);
+recipes.addShapeless("wot_<engineersdecor:treated_wood_pole_head>", <engineersdecor:treated_wood_pole_head>,
+    [<engineersdecor:treated_wood_pole>, treatedSlab]
+);
+
+// Treated Decor
+
+recipes.remove(<engineersdecor:treated_wood_windowsill>);
+recipes.addShaped("wot_<engineersdecor:treated_wood_windowsill>", <engineersdecor:treated_wood_windowsill> * 4, [
+    [treatedMoulding, treatedMoulding, treatedMoulding],
+    [treatedCorner, null, treatedCorner]
+]);
+
+recipes.remove(<engineersdecor:treated_wood_broad_windowsill>);
+recipes.addShaped("wot_<engineersdecor:treated_wood_broad_windowsill>", <engineersdecor:treated_wood_broad_windowsill> * 4 , [
+    [treatedSlab, treatedSlab, treatedSlab],
+    [treatedCorner, null, treatedCorner]
+]);
+
 
 
 print("Carpentry Loaded.");
