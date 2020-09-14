@@ -22,3 +22,4 @@ config/jei/
 backups/
 /.idea/
 /WoT Dev 4.iml
+/config/fmlModState.properties
