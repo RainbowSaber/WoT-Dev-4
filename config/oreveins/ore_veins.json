@@ -114,7 +114,7 @@
        {"block": "simpleoresamples:sampleblockredstone"}
       ],
       "max_depth": 80,
-      "rarity": 30
+      "rarity": 25
     }
   },
 
@@ -142,7 +142,7 @@
         {"block": "simpleoresamples:sampleblocklead"}
       ],
       "max_depth": 80,
-      "rarity": 30  
+      "rarity": 40
     }
   },
 
@@ -197,7 +197,7 @@
         {"block": "simpleoresamples:sampleblockiron"}
       ],
       "max_depth": 80,
-      "rarity": 30
+      "rarity": 50
     }
   },
 
@@ -224,7 +224,7 @@
         {"block": "gravelores:iron_gravel_ore"}
       ],
       "max_depth": 30,
-      "rarity": 7
+      "rarity": 10
     }
   },
 
@@ -251,7 +251,7 @@
         {"block": "gravelores:coal_gravel_ore"}
       ],
       "max_depth": 30,
-      "rarity": 5
+      "rarity": 8
     }
   },
 
