@@ -8,9 +8,9 @@ val treatedMoulding = <ore:mouldingTreatedWood>;
 val treatedSlab = <ore:slabTreatedWood>;
 
 treatedCorner.addItems([
-    <betterwithmods:siding_wood>.withTag({texture: {Properties: {type: "vertical"}, Name: "immersiveengineering:treated_wood"}}),
-    <betterwithmods:siding_wood>.withTag({texture: {Properties: {type: "packaged"}, Name: "immersiveengineering:treated_wood"}}),
-    <betterwithmods:siding_wood>.withTag({texture: {Properties: {type: "horizontal"}, Name: "immersiveengineering:treated_wood"}})
+    <betterwithmods:corner_wood>.withTag({texture: {Properties: {type: "horizontal"}, Name: "immersiveengineering:treated_wood"}}),
+    <betterwithmods:corner_wood>.withTag({texture: {Properties: {type: "vertical"}, Name: "immersiveengineering:treated_wood"}}),
+    <betterwithmods:corner_wood>.withTag({texture: {Properties: {type: "packaged"}, Name: "immersiveengineering:treated_wood"}})
     ]);
 
 treatedMoulding.addItems([
@@ -24,6 +24,54 @@ treatedSlab.addItems([
     <betterwithmods:siding_wood>.withTag({texture: {Properties: {type: "packaged"}, Name: "immersiveengineering:treated_wood"}}),
     <betterwithmods:siding_wood>.withTag({texture: {Properties: {type: "horizontal"}, Name: "immersiveengineering:treated_wood"}})
   ]);
+
+// Siding OreDict
+val slabWood = <ore:slabWood>;
+val sidingWood = <ore:sidingWood>;
+
+slabWood.addItems([
+    <betterwithmods:siding_wood>.withTag({texture: {Properties: {variant: "vertical_jungle_planks"}, Name: "quark:vertical_planks"}}),
+    <betterwithmods:siding_wood>.withTag({texture: {Properties: {variant: "vertical_acacia_planks"}, Name: "quark:vertical_planks"}}),
+    <betterwithmods:siding_wood>.withTag({texture: {Properties: {variant: "vertical_dark_oak_planks"}, Name: "quark:vertical_planks"}}),
+    <betterwithmods:siding_wood>.withTag({texture: {Properties: {variant: "spruce"}, Name: "minecraft:planks"}}),
+    <betterwithmods:siding_wood>.withTag({texture: {Properties: {variant: "oak"}, Name: "minecraft:planks"}}),
+    <betterwithmods:siding_wood>.withTag({texture: {Properties: {variant: "birch"}, Name: "minecraft:planks"}}),
+    <betterwithmods:siding_wood>.withTag({texture: {Properties: {variant: "jungle"}, Name: "minecraft:planks"}}),
+    <betterwithmods:siding_wood>.withTag({texture: {Properties: {variant: "acacia"}, Name: "minecraft:planks"}}),
+    <betterwithmods:siding_wood>.withTag({texture: {Properties: {variant: "dark_oak"}, Name: "minecraft:planks"}}),
+    <betterwithmods:siding_wood>.withTag({texture: {Properties: {variant: "olive"}, Name: "rustic:planks"}}),
+    <betterwithmods:siding_wood>.withTag({texture: {Properties: {variant: "vertical_birch_planks"}, Name: "quark:vertical_planks"}}),
+    <betterwithmods:siding_wood>.withTag({texture: {Properties: {variant: "ironwood"}, Name: "rustic:planks"}}),
+    <betterwithmods:siding_wood>.withTag({texture: {Name: "thaumcraft:plank_greatwood"}}),
+    <betterwithmods:siding_wood>.withTag({texture: {Name: "thaumcraft:plank_silverwood"}}),
+    <betterwithmods:siding_wood>.withTag({texture: {Properties: {type: "horizontal"}, Name: "immersiveengineering:treated_wood"}}),
+    <betterwithmods:siding_wood>.withTag({texture: {Properties: {type: "vertical"}, Name: "immersiveengineering:treated_wood"}}),
+    <betterwithmods:siding_wood>.withTag({texture: {Properties: {type: "packaged"}, Name: "immersiveengineering:treated_wood"}}),
+    <betterwithmods:siding_wood>.withTag({texture: {Properties: {variant: "vertical_oak_planks"}, Name: "quark:vertical_planks"}}),
+    <betterwithmods:siding_wood>.withTag({texture: {Properties: {variant: "vertical_spruce_planks"}, Name: "quark:vertical_planks"}})
+]);
+
+sidingWood.addItems([
+    <betterwithmods:siding_wood>.withTag({texture: {Properties: {variant: "vertical_jungle_planks"}, Name: "quark:vertical_planks"}}),
+    <betterwithmods:siding_wood>.withTag({texture: {Properties: {variant: "vertical_acacia_planks"}, Name: "quark:vertical_planks"}}),
+    <betterwithmods:siding_wood>.withTag({texture: {Properties: {variant: "vertical_dark_oak_planks"}, Name: "quark:vertical_planks"}}),
+    <betterwithmods:siding_wood>.withTag({texture: {Properties: {variant: "spruce"}, Name: "minecraft:planks"}}),
+    <betterwithmods:siding_wood>.withTag({texture: {Properties: {variant: "oak"}, Name: "minecraft:planks"}}),
+    <betterwithmods:siding_wood>.withTag({texture: {Properties: {variant: "birch"}, Name: "minecraft:planks"}}),
+    <betterwithmods:siding_wood>.withTag({texture: {Properties: {variant: "jungle"}, Name: "minecraft:planks"}}),
+    <betterwithmods:siding_wood>.withTag({texture: {Properties: {variant: "acacia"}, Name: "minecraft:planks"}}),
+    <betterwithmods:siding_wood>.withTag({texture: {Properties: {variant: "dark_oak"}, Name: "minecraft:planks"}}),
+    <betterwithmods:siding_wood>.withTag({texture: {Properties: {variant: "olive"}, Name: "rustic:planks"}}),
+    <betterwithmods:siding_wood>.withTag({texture: {Properties: {variant: "vertical_birch_planks"}, Name: "quark:vertical_planks"}}),
+    <betterwithmods:siding_wood>.withTag({texture: {Properties: {variant: "ironwood"}, Name: "rustic:planks"}}),
+    <betterwithmods:siding_wood>.withTag({texture: {Name: "thaumcraft:plank_greatwood"}}),
+    <betterwithmods:siding_wood>.withTag({texture: {Name: "thaumcraft:plank_silverwood"}}),
+    <betterwithmods:siding_wood>.withTag({texture: {Properties: {type: "horizontal"}, Name: "immersiveengineering:treated_wood"}}),
+    <betterwithmods:siding_wood>.withTag({texture: {Properties: {type: "vertical"}, Name: "immersiveengineering:treated_wood"}}),
+    <betterwithmods:siding_wood>.withTag({texture: {Properties: {type: "packaged"}, Name: "immersiveengineering:treated_wood"}}),
+    <betterwithmods:siding_wood>.withTag({texture: {Properties: {variant: "vertical_oak_planks"}, Name: "quark:vertical_planks"}}),
+    <betterwithmods:siding_wood>.withTag({texture: {Properties: {variant: "vertical_spruce_planks"}, Name: "quark:vertical_planks"}})
+]);
 
 
 val planks = [
@@ -317,20 +365,20 @@ recipes.addShaped("wot_<thaumcraft_tableStone>", <thaumcraft:table_stone> * 4, [
 
 // IE tables
 recipes.remove(<engineersdecor:treated_wood_table>);
-recipes.addShaped("wot_<engineersdecor:treated_wood_table>", <engineersdecor:treated_wood_table> * 4, [
+recipes.addShaped("wot_<engineersdecor_treated_wood_table>", <engineersdecor:treated_wood_table> * 4, [
     [treatedSlab, treatedSlab, treatedSlab],
     [treatedMoulding, null, treatedMoulding]
 ]);
 
 recipes.remove(<engineersdecor:treated_wood_side_table>);
-recipes.addShaped("wot_<engineersdecor:treated_wood_side_table>", <engineersdecor:treated_wood_side_table> * 4, [
+recipes.addShaped("wot_<engineersdecor_treated_wood_side_table>", <engineersdecor:treated_wood_side_table> * 4, [
     [treatedSlab, treatedSlab, treatedSlab],
     [null, treatedMoulding, null],
     [null, treatedMoulding, null]
 ]);
 
 recipes.remove(<engineersdecor:treated_wood_stool>);
-recipes.addShaped("wot_<engineersdecor:treated_wood_stool>", <engineersdecor:treated_wood_stool> * 2, [
+recipes.addShaped("wot_<engineersdecor_treated_wood_stool>", <engineersdecor:treated_wood_stool> * 2, [
     [treatedSlab, treatedSlab, treatedSlab],
     [null, treatedMoulding, null],
     [null, treatedMoulding, null]
@@ -339,32 +387,32 @@ recipes.addShaped("wot_<engineersdecor:treated_wood_stool>", <engineersdecor:tre
 //Wooden Poles
 
 recipes.remove(<engineersdecor:treated_wood_pole>);
-recipes.addShaped("wot_<engineersdecor:treated_wood_pole>", <engineersdecor:treated_wood_pole> * 3, [
+recipes.addShaped("wot_<engineersdecor_treated_wood_pole>", <engineersdecor:treated_wood_pole> * 3, [
     [null, treatedMoulding, null],
     [null, treatedMoulding, null],
     [null, treatedMoulding, null]
 ]);
 
 recipes.remove(<engineersdecor:treated_wood_pole_support>);
-recipes.addShapeless("wot_<engineersdecor:treated_wood_pole_support>", <engineersdecor:treated_wood_pole_support>,
+recipes.addShapeless("wot_<engineersdecor_treated_wood_pole_support>", <engineersdecor:treated_wood_pole_support>,
     [<engineersdecor:treated_wood_pole>, treatedCorner]
 );
 
 recipes.remove(<engineersdecor:treated_wood_pole_head>);
-recipes.addShapeless("wot_<engineersdecor:treated_wood_pole_head>", <engineersdecor:treated_wood_pole_head>,
+recipes.addShapeless("wot_<engineersdecor_treated_wood_pole_head>", <engineersdecor:treated_wood_pole_head>,
     [<engineersdecor:treated_wood_pole>, treatedSlab]
 );
 
 // Treated Decor
 
 recipes.remove(<engineersdecor:treated_wood_windowsill>);
-recipes.addShaped("wot_<engineersdecor:treated_wood_windowsill>", <engineersdecor:treated_wood_windowsill> * 4, [
+recipes.addShaped("wot_<engineersdecor_treated_wood_windowsill>", <engineersdecor:treated_wood_windowsill> * 4, [
     [treatedMoulding, treatedMoulding, treatedMoulding],
     [treatedCorner, null, treatedCorner]
 ]);
 
 recipes.remove(<engineersdecor:treated_wood_broad_windowsill>);
-recipes.addShaped("wot_<engineersdecor:treated_wood_broad_windowsill>", <engineersdecor:treated_wood_broad_windowsill> * 4 , [
+recipes.addShaped("wot_<engineersdecor_treated_wood_broad_windowsill>", <engineersdecor:treated_wood_broad_windowsill> * 4 , [
     [treatedSlab, treatedSlab, treatedSlab],
     [treatedCorner, null, treatedCorner]
 ]);

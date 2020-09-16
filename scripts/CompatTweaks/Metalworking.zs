@@ -6,7 +6,7 @@ val ironIngot = <minecraft:iron_ingot>;
 val ironRod = <immersiveengineering:material:1>;
 val ironPlate = <immersiveengineering:metal:39>;
 val plank = <ore:plankWood>;
-val siding = <betterwithmods:siding_wood>;
+val sidingWood = <ore:sidingWood>;
 
 val shield = <minecraft:shield>;
 val ironBar = <minecraft:iron_bars>;
@@ -21,8 +21,8 @@ recipes.addShaped(shield, [
 	[null, ironIngot, null]
 ]);
 recipes.addShaped(shield, [
-	[siding, siding, siding],
-	[ironPlate, siding, ironPlate],
+	[sidingWood, sidingWood, sidingWood],
+	[ironPlate, sidingWood, ironPlate],
 	[null, siding, null]
 ]);
 

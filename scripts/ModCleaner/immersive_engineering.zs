@@ -79,7 +79,8 @@ var hItems as IItemStack[] =
 	<immersivepetroleum:schematic>.withTag({multiblock: "IP:DistillationTower"}),
 	<immersivepetroleum:schematic>.withTag({multiblock: "IP:Pumpjack"}),
 	<immersivepetroleum:schematic>.withTag({multiblock: "IE:ExcavatorDemo", flip: 1 as byte}),
-	<immersiveengineering:coresample>
+	<immersiveengineering:coresample>,
+	<immersiveengineering:metal_device0:3>
 ];
 
 lib.hideArray(hItems);

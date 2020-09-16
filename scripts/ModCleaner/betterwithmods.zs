@@ -21,7 +21,8 @@ var hItems as IItemStack[] = [
     <betterwithmods:stump_remover>,
     <betterwithmods:candle:*>,
     <betterwithmods:candle_holder>,
-    <betterwithmods:booster>
+    <betterwithmods:booster>,
+    <betterwithmods:creative_generator>
 ];
 
 lib.cleanArray(hItems);

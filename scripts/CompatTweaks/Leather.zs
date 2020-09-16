@@ -41,7 +41,6 @@ recipes.addShaped("thaumcraft_babulegirdle", <thaumcraft:baubles:2>, [
 	
 // Wearable Backpack
 
-//recipes.remove(<wearablebackpacks:backpack>);
 val goldIngot = <immersiveengineering:metal:1>;
 
 recipes.addShaped(<quark:backpack>, [
@@ -63,11 +62,11 @@ recipes.addShaped("wot_leather_rc", rcGoggle, [
 	[pane, <ore:ingotSteel>, pane],
 	[null, treatedBelt, null]
 ]);
-
+/*
 recipes.addShaped("wot_leather_tc", tcGoggle, [
 	[paneMagic, <ore:ingotBrass>, paneMagic],
 	[null, treatedBelt, null]
 ]);
-
+*/
 	
 print("Leatherworking Loaded.");
