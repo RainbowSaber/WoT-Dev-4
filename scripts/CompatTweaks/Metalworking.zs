@@ -23,7 +23,7 @@ recipes.addShaped(shield, [
 recipes.addShaped(shield, [
 	[sidingWood, sidingWood, sidingWood],
 	[ironPlate, sidingWood, ironPlate],
-	[null, siding, null]
+	[null, sidingWood, null]
 ]);
 
 

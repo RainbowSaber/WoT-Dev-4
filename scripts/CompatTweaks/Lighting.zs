@@ -46,7 +46,7 @@ recipes.addShaped(<rusticthaumaturgy:lantern_brass> * 4, [
 ]);
 
 recipes.remove(<rustic:lantern_wood>);
-recipes.addShaped("wot_<rustic:lantern_wood>", <rustic:lantern_wood> * 2, [
+recipes.addShaped("wot_<rustic_lantern_wood>", <rustic:lantern_wood> * 2, [
     [null, <ore:slabWood>, null],
     [paneGlass, torch, paneGlass],
     [null, <ore:slabWood>, null]
@@ -62,7 +62,7 @@ recipes.addShaped(lanternIE * 2, [
 ]);
 
 recipes.remove(<engineersdecor:iron_inset_light>);
-recipes.addShaped("wot_<engineersdecor:iron_inset_light>", <engineersdecor:iron_inset_light> * 4, [
+recipes.addShaped("wot_<engineersdecor_iron_inset_light>", <engineersdecor:iron_inset_light> * 4, [
     [null, null, null],
     [paneGlass, paneGlass, paneGlass],
     [plateIron, filament, plateIron]

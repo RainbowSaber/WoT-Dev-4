@@ -17,6 +17,7 @@ val treatSiding = <betterwithmods:siding_wood>.withTag({texture: {Properties: {t
 val treatStick = <immersiveengineering:material>;
 val glue = <betterwithmods:material:12>;
 val wdnAxle = <betterwithmods:wooden_axle>;
+val stringMinecraft = <ore:string>;
 
 
 recipes.replaceAllOccurences(hempFiberBWM, hempFiberIE);
@@ -86,10 +87,7 @@ recipes.addShaped(waterMill, [
 
 //Rustic Ropes
 recipes.remove(<rustic:rope>);
-recipes.addShaped(<rustic:rope>*8, [
-	[hempFiberIE, null, null],
-	[hempFiberIE, null, null]
-]);
+recipes.addShapeless(<rustic:rope>*4, [stringMinecraft, stringMinecraft]);
 
 //Removes Unnecessary Hemp Duplicates
 val shitList = [

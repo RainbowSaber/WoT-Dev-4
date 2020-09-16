@@ -62,11 +62,10 @@ recipes.addShaped("wot_leather_rc", rcGoggle, [
 	[pane, <ore:ingotSteel>, pane],
 	[null, treatedBelt, null]
 ]);
-/*
+
 recipes.addShaped("wot_leather_tc", tcGoggle, [
 	[paneMagic, <ore:ingotBrass>, paneMagic],
 	[null, treatedBelt, null]
 ]);
-*/
 	
 print("Leatherworking Loaded.");
