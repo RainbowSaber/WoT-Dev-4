@@ -1,4 +1,5 @@
 import crafttweaker.item.IItemStack;
+import mods.thaumcraft.ArcaneWorkbench;
 
 print("Leatherworking Loading ...");
 
@@ -56,7 +57,7 @@ var paneMagic = <thaumcraft:thaumometer>;
 
 
 recipes.remove(rcGoggle);
-recipes.remove(tcGoggle);
+mods.thaumcraft.ArcaneWorkbench.removeRecipe(<thaumcraft:goggles>);
 
 recipes.addShaped("wot_leather_rc", rcGoggle, [
 	[pane, <ore:ingotSteel>, pane],
@@ -66,6 +67,11 @@ recipes.addShaped("wot_leather_rc", rcGoggle, [
 recipes.addShaped("wot_leather_tc", tcGoggle, [
 	[paneMagic, <ore:ingotBrass>, paneMagic],
 	[null, treatedBelt, null]
+]);
+
+mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("tc_goggle", "", 50, [], tcGoggle, [
+    [paneMagic, <ore:ingotBrass>, paneMagic],
+    [null, treatedBelt, null]
 ]);
 	
 print("Leatherworking Loaded.");

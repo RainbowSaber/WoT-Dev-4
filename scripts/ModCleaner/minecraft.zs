@@ -187,5 +187,5 @@ recipes.addShaped(<minecraft:iron_horse_armor>, [
 
 //Name Tag recipe
 recipes.addShapeless(<minecraft:name_tag>, 
-	[<thaumcraft:label>, <ore:string>, <ore:slimeball>]
+	[<thaumcraft:label>, <ore:string>]
 );

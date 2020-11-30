@@ -11,27 +11,24 @@ var bun_dough = VanillaFactory.createItem("bun_dough");
 bun_dough.register();
 
 var burger = VanillaFactory.createItemFood("burger", 10);
-burger.saturation = 12;
+burger.saturation = 0.9;
+burger.onItemFoodEaten = function(stack, world, player) {
+           if (!world.isRemote()) {
+               player.addPotionEffect(<potion:minecraft:slowness>.makePotionEffect(5, 1));
+           }
+       };
 burger.register();
 
 var donut_choc = VanillaFactory.createItemFood("donut_choc", 3);
-donut_choc.saturation = 2;
+donut_choc.saturation = 0.2;
+donut_choc.onItemFoodEaten = function(stack, world, player) {
+                   player.addPotionEffect(<potion:minecraft:swiftness>.makePotionEffect(5, 1));
+};
 donut_choc.register();
 
 var donut_glazed = VanillaFactory.createItemFood("donut_glazed", 2);
-donut_glazed.saturation = 1;
+donut_glazed.saturation = 0.2;
+donut_glazed.onItemFoodEaten = function(stack, world, player) {
+                    player.addPotionEffect(<potion:minecraft:swiftness>.makePotionEffect(5, 1));
+};
 donut_glazed.register();
-
-var flour = <betterwithmods:raw_pastry:3>;
-var sugar = <minecraft:sugar>;
-var choc = <betterwithmods:chocolate>;
-
-recipes.addShaped("wot_contenttweaker_burger", <contenttweaker:burger> * 2, [
-    [null, <minecraft:bread>, null],
-    [<rustic:tomato>, <ore:listAllmeatcooked>, <minecraft:reeds>],
-    [null, <minecraft:bread>, null]
-]);
-
-recipes.addShapeless("wot_contenttweaker_bun_dough", <contenttweaker:bun_dough>, [
-    [flour, flour, sugar, choc]
-]);
