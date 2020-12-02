@@ -209,9 +209,9 @@ recipes.addShaped("wot_rc_sTie", tieStone, [
     [stMould, stMould, stMould]
 ]);
 
-mods.immersiveengineering.MetalPress.addRecipe(rail1, ironIng, trackMold, 2000);
-mods.immersiveengineering.MetalPress.addRecipe(rail1, copperIng, trackMold, 2000);
-mods.immersiveengineering.MetalPress.addRecipe(rail1 * 2, steelIng, trackMold, 2000);
+mods.immersiveengineering.MetalPress.addRecipe(rail1 * 2, ironIng, trackMold, 2000);
+mods.immersiveengineering.MetalPress.addRecipe(rail1 * 2, copperIng, trackMold, 2000);
+mods.immersiveengineering.MetalPress.addRecipe(rail1 * 3, steelIng, trackMold, 2000);
 
 recipes.addShaped("wot_rc_rail2", rail2 * 3, [
     [rail1, reds, goldIng]

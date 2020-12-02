@@ -20,6 +20,7 @@ recipes.addShaped(shield, [
 	[ironIngot, plank, ironIngot], 
 	[null, ironIngot, null]
 ]);
+
 recipes.addShaped(shield, [
 	[sidingWood, sidingWood, sidingWood],
 	[ironPlate, sidingWood, ironPlate],
