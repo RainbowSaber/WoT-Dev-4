@@ -1,0 +1,22 @@
+{
+    "variants": {
+        "normal": [
+            { "model": "glowstone" },
+            { "model": "glowstone", "x": 90 },
+            { "model": "glowstone", "x": 180 },
+            { "model": "glowstone", "x": 270 },
+            { "model": "glowstone", "y": 90 },
+            { "model": "glowstone", "y": 90, "x": 90 },
+            { "model": "glowstone", "y": 90, "x": 180 },
+            { "model": "glowstone", "y": 90, "x": 270 },
+            { "model": "glowstone", "y": 180 },
+            { "model": "glowstone", "y": 180, "x": 90 },
+            { "model": "glowstone", "y": 180, "x": 180 },
+            { "model": "glowstone", "y": 180, "x": 270 },
+            { "model": "glowstone", "y": 270 },
+            { "model": "glowstone", "y": 270, "x": 90 },
+            { "model": "glowstone", "y": 270, "x": 180 },
+            { "model": "glowstone", "y": 270, "x": 270 }
+        ]
+    }
+}

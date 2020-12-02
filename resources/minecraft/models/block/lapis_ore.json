@@ -1,0 +1,12 @@
+{
+    "parent": "block/cube",
+    "textures": {
+        "particle": "blocks/lapis_ore",
+        "north": "blocks/lapis_ore",
+        "south": "blocks/lapis_ore",
+        "up": "blocks/lapis_ore3",
+        "down": "blocks/lapis_ore3",
+        "west": "blocks/lapis_ore2",
+        "east": "blocks/lapis_ore2"
+    }
+}

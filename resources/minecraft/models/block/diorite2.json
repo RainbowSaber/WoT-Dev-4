@@ -1,0 +1,6 @@
+{
+    "parent": "block/diorite",
+    "textures": {
+        "all": "blocks/stone_diorite2"
+    }
+}

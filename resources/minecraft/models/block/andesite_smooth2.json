@@ -1,0 +1,6 @@
+{
+    "parent": "block/andesite_smooth",
+    "textures": {
+        "all": "blocks/stone_andesite_smooth2"
+    }
+}

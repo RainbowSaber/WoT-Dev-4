@@ -1,0 +1,42 @@
+{
+    "variants": {
+        "normal": [
+            { "model": "diamond_ore" },
+            { "model": "diamond_ore", "x": 180 },
+            { "model": "diamond_ore", "y": 180 },
+            { "model": "diamond_ore", "y": 180, "x": 180 },
+            { "model": "diamond_ore2" },
+            { "model": "diamond_ore2", "x": 180 },
+            { "model": "diamond_ore2", "y": 180 },
+            { "model": "diamond_ore2", "y": 180, "x": 180 },
+            { "model": "diamond_ore3" },
+            { "model": "diamond_ore3", "x": 180 },
+            { "model": "diamond_ore3", "y": 180 },
+            { "model": "diamond_ore3", "y": 180, "x": 180 },
+            { "model": "diamond_ore4" },
+            { "model": "diamond_ore4", "x": 180 },
+            { "model": "diamond_ore4", "y": 180 },
+            { "model": "diamond_ore4", "y": 180, "x": 180 },
+            { "model": "diamond_ore5" },
+            { "model": "diamond_ore5", "x": 180 },
+            { "model": "diamond_ore5", "y": 180 },
+            { "model": "diamond_ore5", "y": 180, "x": 180 },
+            { "model": "diamond_ore6" },
+            { "model": "diamond_ore6", "x": 180 },
+            { "model": "diamond_ore6", "y": 180 },
+            { "model": "diamond_ore6", "y": 180, "x": 180 },
+            { "model": "diamond_ore7" },
+            { "model": "diamond_ore7", "x": 180 },
+            { "model": "diamond_ore7", "y": 180 },
+            { "model": "diamond_ore7", "y": 180, "x": 180 },
+            { "model": "diamond_ore8" },
+            { "model": "diamond_ore8", "x": 180 },
+            { "model": "diamond_ore8", "y": 180 },
+            { "model": "diamond_ore8", "y": 180, "x": 180 },
+            { "model": "diamond_ore9" },
+            { "model": "diamond_ore9", "x": 180 },
+            { "model": "diamond_ore9", "y": 180 },
+            { "model": "diamond_ore9", "y": 180, "x": 180 }
+        ]
+    }
+}

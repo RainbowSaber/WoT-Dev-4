@@ -1,0 +1,6 @@
+{
+    "parent": "block/double_grass_bottom",
+    "textures": {
+        "cross": "blocks/double_plant_grass_bottom4"
+    }
+}

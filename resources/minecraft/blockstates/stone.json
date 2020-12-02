@@ -1,0 +1,22 @@
+{
+    "variants": {
+        "normal": [
+            { "model": "stone" },
+            { "model": "stone", "x": 180 },
+            { "model": "stone", "y": 180 },
+            { "model": "stone", "y": 180, "x": 180 },
+            { "model": "stone2" },
+            { "model": "stone2", "x": 180 },
+            { "model": "stone2", "y": 180 },
+            { "model": "stone2", "y": 180, "x": 180 },
+            { "model": "stone3" },
+            { "model": "stone3", "x": 180 },
+            { "model": "stone3", "y": 180 },
+            { "model": "stone3", "y": 180, "x": 180 },
+            { "model": "stone4" },
+            { "model": "stone4", "x": 180 },
+            { "model": "stone4", "y": 180 },
+            { "model": "stone4", "y": 180, "x": 180 }
+        ]
+    }
+}

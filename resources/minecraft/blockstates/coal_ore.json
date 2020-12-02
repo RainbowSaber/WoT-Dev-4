@@ -1,0 +1,42 @@
+{
+    "variants": {
+        "normal": [
+            { "model": "coal_ore" },
+            { "model": "coal_ore", "x": 180 },
+            { "model": "coal_ore", "y": 180 },
+            { "model": "coal_ore", "y": 180, "x": 180 },
+            { "model": "coal_ore2" },
+            { "model": "coal_ore2", "x": 180 },
+            { "model": "coal_ore2", "y": 180 },
+            { "model": "coal_ore2", "y": 180, "x": 180 },
+            { "model": "coal_ore3" },
+            { "model": "coal_ore3", "x": 180 },
+            { "model": "coal_ore3", "y": 180 },
+            { "model": "coal_ore3", "y": 180, "x": 180 },
+            { "model": "coal_ore4" },
+            { "model": "coal_ore4", "x": 180 },
+            { "model": "coal_ore4", "y": 180 },
+            { "model": "coal_ore4", "y": 180, "x": 180 },
+            { "model": "coal_ore5" },
+            { "model": "coal_ore5", "x": 180 },
+            { "model": "coal_ore5", "y": 180 },
+            { "model": "coal_ore5", "y": 180, "x": 180 },
+            { "model": "coal_ore6" },
+            { "model": "coal_ore6", "x": 180 },
+            { "model": "coal_ore6", "y": 180 },
+            { "model": "coal_ore6", "y": 180, "x": 180 },
+            { "model": "coal_ore7" },
+            { "model": "coal_ore7", "x": 180 },
+            { "model": "coal_ore7", "y": 180 },
+            { "model": "coal_ore7", "y": 180, "x": 180 },
+            { "model": "coal_ore8" },
+            { "model": "coal_ore8", "x": 180 },
+            { "model": "coal_ore8", "y": 180 },
+            { "model": "coal_ore8", "y": 180, "x": 180 },
+            { "model": "coal_ore9" },
+            { "model": "coal_ore9", "x": 180 },
+            { "model": "coal_ore9", "y": 180 },
+            { "model": "coal_ore9", "y": 180, "x": 180 }
+        ]
+    }
+}

@@ -1,0 +1,12 @@
+{
+    "parent": "block/cube",
+    "textures": {
+        "particle": "blocks/gold_ore",
+        "north": "blocks/gold_ore4",
+        "south": "blocks/gold_ore4",
+        "up": "blocks/gold_ore6",
+        "down": "blocks/gold_ore6",
+        "west": "blocks/gold_ore5",
+        "east": "blocks/gold_ore5"
+    }
+}

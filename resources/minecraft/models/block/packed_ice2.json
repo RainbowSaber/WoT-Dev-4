@@ -1,0 +1,6 @@
+{
+    "parent": "block/packed_ice",
+    "textures": {
+        "all": "blocks/ice_packed2"
+    }
+}

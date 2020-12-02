@@ -1,0 +1,9 @@
+{
+  "ctm": {
+    "ctm_version": 1,
+    "type": "ctm",
+    "textures": [
+      "rustic:blocks/ctm/pillar_stone_end_ctm"
+    ]
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "particle": "rustic:blocks/ctm/pillar_stone_side_h",
+    "down": "rustic:blocks/ctm/pillar_stone_side_h",
+    "up": "rustic:blocks/ctm/pillar_stone_side_h",
+    "north": "rustic:blocks/ctm/pillar_stone_side_h",
+    "south": "rustic:blocks/ctm/pillar_stone_side_h",
+    "west": "rustic:blocks/ctm/pillar_stone_end",
+    "east": "rustic:blocks/ctm/pillar_stone_end"
+  }
+}

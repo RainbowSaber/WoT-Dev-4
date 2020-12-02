@@ -1,0 +1,7 @@
+{
+    "parent": "block/grass_snowed",
+    "textures": {
+        "top": "blocks/mycelium_top",
+        "side": "blocks/mycelium_side_snowed"
+    }
+}

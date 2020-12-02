@@ -1,0 +1,42 @@
+{
+    "variants": {
+        "normal": [
+            { "model": "gold_ore" },
+            { "model": "gold_ore", "x": 180 },
+            { "model": "gold_ore", "y": 180 },
+            { "model": "gold_ore", "y": 180, "x": 180 },
+            { "model": "gold_ore2" },
+            { "model": "gold_ore2", "x": 180 },
+            { "model": "gold_ore2", "y": 180 },
+            { "model": "gold_ore2", "y": 180, "x": 180 },
+            { "model": "gold_ore3" },
+            { "model": "gold_ore3", "x": 180 },
+            { "model": "gold_ore3", "y": 180 },
+            { "model": "gold_ore3", "y": 180, "x": 180 },
+            { "model": "gold_ore4" },
+            { "model": "gold_ore4", "x": 180 },
+            { "model": "gold_ore4", "y": 180 },
+            { "model": "gold_ore4", "y": 180, "x": 180 },
+            { "model": "gold_ore5" },
+            { "model": "gold_ore5", "x": 180 },
+            { "model": "gold_ore5", "y": 180 },
+            { "model": "gold_ore5", "y": 180, "x": 180 },
+            { "model": "gold_ore6" },
+            { "model": "gold_ore6", "x": 180 },
+            { "model": "gold_ore6", "y": 180 },
+            { "model": "gold_ore6", "y": 180, "x": 180 },
+            { "model": "gold_ore7" },
+            { "model": "gold_ore7", "x": 180 },
+            { "model": "gold_ore7", "y": 180 },
+            { "model": "gold_ore7", "y": 180, "x": 180 },
+            { "model": "gold_ore8" },
+            { "model": "gold_ore8", "x": 180 },
+            { "model": "gold_ore8", "y": 180 },
+            { "model": "gold_ore8", "y": 180, "x": 180 },
+            { "model": "gold_ore9" },
+            { "model": "gold_ore9", "x": 180 },
+            { "model": "gold_ore9", "y": 180 },
+            { "model": "gold_ore9", "y": 180, "x": 180 }
+        ]
+    }
+}

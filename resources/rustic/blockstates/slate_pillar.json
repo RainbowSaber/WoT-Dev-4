@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "axis=y": { "model": "rustic:slate_pillar_y" },
+    "axis=z": { "model": "rustic:slate_pillar_z" },
+    "axis=x": { "model": "rustic:slate_pillar_x" }
+  }
+}

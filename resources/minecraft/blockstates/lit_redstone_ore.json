@@ -1,0 +1,42 @@
+{
+    "variants": {
+        "normal": [
+            { "model": "redstone_ore" },
+            { "model": "redstone_ore", "x": 180 },
+            { "model": "redstone_ore", "y": 180 },
+            { "model": "redstone_ore", "y": 180, "x": 180 },
+            { "model": "redstone_ore2" },
+            { "model": "redstone_ore2", "x": 180 },
+            { "model": "redstone_ore2", "y": 180 },
+            { "model": "redstone_ore2", "y": 180, "x": 180 },
+            { "model": "redstone_ore3" },
+            { "model": "redstone_ore3", "x": 180 },
+            { "model": "redstone_ore3", "y": 180 },
+            { "model": "redstone_ore3", "y": 180, "x": 180 },
+            { "model": "redstone_ore4" },
+            { "model": "redstone_ore4", "x": 180 },
+            { "model": "redstone_ore4", "y": 180 },
+            { "model": "redstone_ore4", "y": 180, "x": 180 },
+            { "model": "redstone_ore5" },
+            { "model": "redstone_ore5", "x": 180 },
+            { "model": "redstone_ore5", "y": 180 },
+            { "model": "redstone_ore5", "y": 180, "x": 180 },
+            { "model": "redstone_ore6" },
+            { "model": "redstone_ore6", "x": 180 },
+            { "model": "redstone_ore6", "y": 180 },
+            { "model": "redstone_ore6", "y": 180, "x": 180 },
+            { "model": "redstone_ore7" },
+            { "model": "redstone_ore7", "x": 180 },
+            { "model": "redstone_ore7", "y": 180 },
+            { "model": "redstone_ore7", "y": 180, "x": 180 },
+            { "model": "redstone_ore8" },
+            { "model": "redstone_ore8", "x": 180 },
+            { "model": "redstone_ore8", "y": 180 },
+            { "model": "redstone_ore8", "y": 180, "x": 180 },
+            { "model": "redstone_ore9" },
+            { "model": "redstone_ore9", "x": 180 },
+            { "model": "redstone_ore9", "y": 180 },
+            { "model": "redstone_ore9", "y": 180, "x": 180 }
+        ]
+    }
+}

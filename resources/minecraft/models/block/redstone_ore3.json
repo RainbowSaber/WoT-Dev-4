@@ -1,0 +1,12 @@
+{
+    "parent": "block/cube",
+    "textures": {
+        "particle": "blocks/redstone_ore",
+        "north": "blocks/redstone_ore3",
+        "south": "blocks/redstone_ore3",
+        "up": "blocks/redstone_ore2",
+        "down": "blocks/redstone_ore2",
+        "west": "blocks/redstone_ore",
+        "east": "blocks/redstone_ore"
+    }
+}

@@ -1,0 +1,42 @@
+{
+    "variants": {
+        "normal": [
+            { "model": "iron_ore" },
+            { "model": "iron_ore", "x": 180 },
+            { "model": "iron_ore", "y": 180 },
+            { "model": "iron_ore", "y": 180, "x": 180 },
+            { "model": "iron_ore2" },
+            { "model": "iron_ore2", "x": 180 },
+            { "model": "iron_ore2", "y": 180 },
+            { "model": "iron_ore2", "y": 180, "x": 180 },
+            { "model": "iron_ore3" },
+            { "model": "iron_ore3", "x": 180 },
+            { "model": "iron_ore3", "y": 180 },
+            { "model": "iron_ore3", "y": 180, "x": 180 },
+            { "model": "iron_ore4" },
+            { "model": "iron_ore4", "x": 180 },
+            { "model": "iron_ore4", "y": 180 },
+            { "model": "iron_ore4", "y": 180, "x": 180 },
+            { "model": "iron_ore5" },
+            { "model": "iron_ore5", "x": 180 },
+            { "model": "iron_ore5", "y": 180 },
+            { "model": "iron_ore5", "y": 180, "x": 180 },
+            { "model": "iron_ore6" },
+            { "model": "iron_ore6", "x": 180 },
+            { "model": "iron_ore6", "y": 180 },
+            { "model": "iron_ore6", "y": 180, "x": 180 },
+            { "model": "iron_ore7" },
+            { "model": "iron_ore7", "x": 180 },
+            { "model": "iron_ore7", "y": 180 },
+            { "model": "iron_ore7", "y": 180, "x": 180 },
+            { "model": "iron_ore8" },
+            { "model": "iron_ore8", "x": 180 },
+            { "model": "iron_ore8", "y": 180 },
+            { "model": "iron_ore8", "y": 180, "x": 180 },
+            { "model": "iron_ore9" },
+            { "model": "iron_ore9", "x": 180 },
+            { "model": "iron_ore9", "y": 180 },
+            { "model": "iron_ore9", "y": 180, "x": 180 }
+        ]
+    }
+}

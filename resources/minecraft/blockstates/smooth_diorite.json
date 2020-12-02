@@ -1,0 +1,10 @@
+{
+    "variants": {
+        "normal": [
+            { "model": "diorite_smooth" },
+            { "model": "diorite_smooth2" },
+            { "model": "diorite_smooth3" },
+            { "model": "diorite_smooth4" }
+        ]
+    }
+}

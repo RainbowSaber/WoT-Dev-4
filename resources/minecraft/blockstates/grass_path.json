@@ -1,0 +1,38 @@
+{
+    "variants": {
+        "normal": [
+            { "model": "grass_path" },
+            { "model": "grass_path", "y": 90 },
+            { "model": "grass_path", "y": 180 },
+            { "model": "grass_path", "y": 270 },
+            { "model": "grass_path2" },
+            { "model": "grass_path2", "y": 90 },
+            { "model": "grass_path2", "y": 180 },
+            { "model": "grass_path2", "y": 270 },
+            { "model": "grass_path3" },
+            { "model": "grass_path3", "y": 90 },
+            { "model": "grass_path3", "y": 180 },
+            { "model": "grass_path3", "y": 270 },
+            { "model": "grass_path4" },
+            { "model": "grass_path4", "y": 90 },
+            { "model": "grass_path4", "y": 180 },
+            { "model": "grass_path4", "y": 270 },
+            { "model": "grass_path5" },
+            { "model": "grass_path5", "y": 90 },
+            { "model": "grass_path5", "y": 180 },
+            { "model": "grass_path5", "y": 270 },
+            { "model": "grass_path6" },
+            { "model": "grass_path6", "y": 90 },
+            { "model": "grass_path6", "y": 180 },
+            { "model": "grass_path6", "y": 270 },
+            { "model": "grass_path7" },
+            { "model": "grass_path7", "y": 90 },
+            { "model": "grass_path7", "y": 180 },
+            { "model": "grass_path7", "y": 270 },
+            { "model": "grass_path8" },
+            { "model": "grass_path8", "y": 90 },
+            { "model": "grass_path8", "y": 180 },
+            { "model": "grass_path8", "y": 270 }
+        ]
+    }
+}

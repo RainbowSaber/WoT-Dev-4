@@ -1,0 +1,6 @@
+{
+    "parent": "block/diorite_smooth",
+    "textures": {
+        "all": "blocks/stone_diorite_smooth2"
+    }
+}

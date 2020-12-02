@@ -1,0 +1,6 @@
+{
+    "parent": "block/mycelium_snowed",
+    "textures": {
+        "side": "blocks/mycelium_side_snowed8"
+    }
+}

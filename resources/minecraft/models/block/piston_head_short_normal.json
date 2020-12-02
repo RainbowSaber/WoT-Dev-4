@@ -1,0 +1,9 @@
+{
+    "parent": "block/piston_head_short",
+    "textures": {
+        "back": "blocks/piston_top_back",
+        "side": "blocks/piston_side",
+        "rod": "blocks/piston_rod",
+        "platform": "blocks/piston_top_normal"
+    }
+}

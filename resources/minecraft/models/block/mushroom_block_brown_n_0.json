@@ -1,0 +1,12 @@
+{
+    "parent": "block/cube",
+    "textures": {
+        "particle": "blocks/mushroom_block_inside_brown_center",
+        "down": "blocks/mushroom_block_bottom_brown_n",
+        "up": "blocks/mushroom_block_skin_brown_0",
+        "north": "blocks/mushroom_block_skin_brown_0",
+        "east": "blocks/mushroom_block_inside_brown_right",
+        "south": "blocks/mushroom_block_inside_brown_center",
+        "west": "blocks/mushroom_block_inside_brown_left"
+    }
+}

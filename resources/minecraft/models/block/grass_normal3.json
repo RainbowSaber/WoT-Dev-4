@@ -1,0 +1,7 @@
+{
+    "parent": "block/grass_normal",
+    "textures": {
+        "side": "blocks/grass_side3",
+        "overlay": "blocks/grass_side_overlay3"
+    }
+}

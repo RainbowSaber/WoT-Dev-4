@@ -1,0 +1,12 @@
+{
+    "parent": "block/orientable",
+    "textures": {
+        "particle": "blocks/pumpkin_side",
+        "down": "blocks/pumpkin_bottom",
+        "up": "blocks/pumpkin_top",
+        "north": "blocks/pumpkin_face_off",
+        "east": "blocks/pumpkin_side",
+        "south": "blocks/pumpkin_side",
+        "west": "blocks/pumpkin_side"
+    }
+}

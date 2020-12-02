@@ -1,0 +1,50 @@
+{
+    "parent": "block/block",
+    "textures": {
+        "all": "entity/shulker/shulker_purple"
+    },
+    "elements": [
+        {   "from": [ 0, 0, 0 ], 
+            "to": [ 16, 0.01, 16 ], 
+            "faces": {
+                "up": { "texture": "#all", "uv": [ 8, 0, 12, 4 ] },
+                "down": { "texture": "#all", "uv": [ 8, 4, 12, 0 ] }
+            }
+        },
+        {   "from": [ 0, 11.99, 0 ], 
+            "to": [ 16, 12, 16 ], 
+            "faces": {
+                "up": { "texture": "#all", "uv": [ 4, 0, 8, 4 ] },
+                "down": { "texture": "#all", "uv": [ 4, 4, 8, 0 ] }
+            }
+        },
+        {   "from": [ 0, 0, 0 ], 
+            "to": [ 16, 12, 0.01 ], 
+            "faces": {
+                "north": { "texture": "#all", "uv": [ 0, 4, 4, 7 ] },
+                "south": { "texture": "#all", "uv": [ 4, 4, 0, 7 ] }
+            }
+        },
+        {   "from": [ 0, 0, 15.99 ], 
+            "to": [ 16, 12, 16 ], 
+            "faces": {
+                "north": { "texture": "#all", "uv": [ 4, 4, 0, 7 ] },
+                "south": { "texture": "#all", "uv": [ 0, 4, 4, 7 ] }
+            }
+        },
+        {   "from": [ 0, 0, 0 ], 
+            "to": [ 0.01, 12, 16 ], 
+            "faces": {
+                "west": { "texture": "#all", "uv": [ 0, 4, 4, 7 ] },
+                "east": { "texture": "#all", "uv": [ 4, 4, 0, 7 ] }
+            }
+        },
+        {   "from": [ 15.99, 0, 0 ], 
+            "to": [ 16, 12, 16 ], 
+            "faces": {
+                "west": { "texture": "#all", "uv": [ 4, 4, 0, 7 ] },
+                "east": { "texture": "#all", "uv": [ 0, 4, 4, 7 ] }
+            }
+        }
+    ]
+}

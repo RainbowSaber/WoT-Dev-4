@@ -1,0 +1,6 @@
+{
+    "parent": "block/andesite",
+    "textures": {
+        "all": "blocks/stone_andesite2"
+    }
+}

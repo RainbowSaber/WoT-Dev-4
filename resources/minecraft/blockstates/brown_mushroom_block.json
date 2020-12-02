@@ -1,0 +1,17 @@
+{
+    "variants": {
+        "variant=north_west": [ { "model": "mushroom_block_brown_nw_0" }, { "model": "mushroom_block_brown_nw_1" } ],
+        "variant=north": [ { "model": "mushroom_block_brown_n_0" }, { "model": "mushroom_block_brown_n_1" } ],
+        "variant=north_east": [ { "model": "mushroom_block_brown_ne_0" }, { "model": "mushroom_block_brown_ne_1" } ],
+        "variant=west": [ { "model": "mushroom_block_brown_w_0" }, { "model": "mushroom_block_brown_w_1" } ],
+        "variant=center": [ { "model": "mushroom_block_brown_c_0" }, { "model": "mushroom_block_brown_c_1" } ],
+        "variant=east": [ { "model": "mushroom_block_brown_e_0" }, { "model": "mushroom_block_brown_e_1" } ],
+        "variant=south_west": [ { "model": "mushroom_block_brown_sw_0" }, { "model": "mushroom_block_brown_sw_1" } ],
+        "variant=south": [ { "model": "mushroom_block_brown_s_0" }, { "model": "mushroom_block_brown_s_1" } ],
+        "variant=south_east": [ { "model": "mushroom_block_brown_se_0" }, { "model": "mushroom_block_brown_se_1" } ],
+        "variant=stem": { "model": "mushroom_block_stem" },
+        "variant=all_stem": { "model": "mushroom_block_stem_all" },
+        "variant=all_outside": [ { "model": "mushroom_block_brown_cap_all_0" }, { "model": "mushroom_block_brown_cap_all_1" } ],
+        "variant=all_inside": { "model": "mushroom_block_brown_inside_all" }
+    }
+}

@@ -1,0 +1,6 @@
+{
+    "parent": "block/frosted_ice_1",
+    "textures": {
+        "all": "blocks/frosted_ice_1_2"
+    }
+}

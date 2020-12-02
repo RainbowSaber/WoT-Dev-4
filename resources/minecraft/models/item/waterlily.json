@@ -1,0 +1,6 @@
+{
+    "parent": "item/template/lilypad_template",
+    "textures": {
+        "layer0": "blocks/waterlily"
+    }
+}

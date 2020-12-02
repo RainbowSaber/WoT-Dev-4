@@ -1,0 +1,12 @@
+{
+  "ctm": {
+    "ctm_version": 1,
+    "type": "ctm",
+    "textures": [
+      "rustic:blocks/ctm/pillar_andesite_side_v_ctm"
+    ],
+    "extra": {
+      "connect_inside": true
+    }
+  }
+}

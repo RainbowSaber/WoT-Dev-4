@@ -1,0 +1,38 @@
+{
+    "variants": {
+        "normal": [
+            { "model": "diorite" },
+            { "model": "diorite", "x": 90 },
+            { "model": "diorite", "x": 180 },
+            { "model": "diorite", "x": 270 },
+            { "model": "diorite", "y": 90 },
+            { "model": "diorite", "y": 90, "x": 90 },
+            { "model": "diorite", "y": 90, "x": 180 },
+            { "model": "diorite", "y": 90, "x": 270 },
+            { "model": "diorite", "y": 180 },
+            { "model": "diorite", "y": 180, "x": 90 },
+            { "model": "diorite", "y": 180, "x": 180 },
+            { "model": "diorite", "y": 180, "x": 270 },
+            { "model": "diorite", "y": 270 },
+            { "model": "diorite", "y": 270, "x": 90 },
+            { "model": "diorite", "y": 270, "x": 180 },
+            { "model": "diorite", "y": 270, "x": 270 },
+            { "model": "diorite2" },
+            { "model": "diorite2", "x": 90 },
+            { "model": "diorite2", "x": 180 },
+            { "model": "diorite2", "x": 270 },
+            { "model": "diorite2", "y": 90 },
+            { "model": "diorite2", "y": 90, "x": 90 },
+            { "model": "diorite2", "y": 90, "x": 180 },
+            { "model": "diorite2", "y": 90, "x": 270 },
+            { "model": "diorite2", "y": 180 },
+            { "model": "diorite2", "y": 180, "x": 90 },
+            { "model": "diorite2", "y": 180, "x": 180 },
+            { "model": "diorite2", "y": 180, "x": 270 },
+            { "model": "diorite2", "y": 270 },
+            { "model": "diorite2", "y": 270, "x": 90 },
+            { "model": "diorite2", "y": 270, "x": 180 },
+            { "model": "diorite2", "y": 270, "x": 270 }
+        ]
+    }
+}

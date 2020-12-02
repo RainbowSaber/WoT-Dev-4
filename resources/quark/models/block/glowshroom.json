@@ -1,0 +1,62 @@
+{
+    "__comment": "Created in part with opl's Model Creator",
+    "ambientocclusion": false,
+    "textures": {
+        "particle": "quark:blocks/glowshroom_blue3d",
+		"texture": "quark:blocks/glowshroom_blue3d"
+    },
+    "elements": [
+        {
+            "from": [3.5,3.5,1.5],
+            "to": [10.5,7,8.5],
+            "faces": {
+                "up": {
+                    "uv": [8.5,1.0,14.5,7.0],
+                    "texture": "#texture"
+                },
+                "down": {
+                    "uv": [1.0,1.0,7.0,7.0],
+                    "texture": "#texture"
+                },
+                "west": {
+                    "uv": [8.5,11.5,14.5,14.5],
+                    "texture": "#texture"
+                },
+                "east": {
+                    "uv": [8.5,11.5,14.5,14.5],
+                    "texture": "#texture"
+                },
+                "north": {
+                    "uv": [8.5,8.0,14.5,11.0],
+                    "texture": "#texture"
+                },
+                "south": {
+                    "uv": [8.5,8.0,14.5,11.0],
+                    "texture": "#texture"
+                }
+            }
+        },
+        {
+            "from": [6,-0.5,4],
+            "to": [8,3.5,6],
+            "faces": {
+                "west": {
+                    "uv": [2.0,12.0,4.0,16.0],
+                    "texture": "#texture"
+                },
+                "east": {
+                    "uv": [2.0,8.0,4.0,12.0],
+                    "texture": "#texture"
+                },
+                "north": {
+                    "uv": [4.0,8.0,6.0,12.0],
+                    "texture": "#texture"
+                },
+                "south": {
+                    "uv": [4.0,12.0,6.0,16.0],
+                    "texture": "#texture"
+                }
+            }
+        }
+    ]
+}

@@ -1,0 +1,6 @@
+{
+    "parent": "item/oak_boat",
+    "textures": {
+        "all": "items/acacia_boat"
+    }
+}

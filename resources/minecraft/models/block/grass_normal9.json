@@ -1,0 +1,6 @@
+{
+    "parent": "block/grass_normal",
+    "textures": {
+        "top": "blocks/grass_top"
+    }
+}

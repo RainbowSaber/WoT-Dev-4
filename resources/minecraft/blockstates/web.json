@@ -1,0 +1,22 @@
+{
+    "variants": {
+        "normal": [
+            { "model": "web" },
+            { "model": "web", "y": 90 },
+            { "model": "web", "y": 180 },
+            { "model": "web", "y": 270 },
+            { "model": "web", "x": 180 },
+            { "model": "web", "x": 180, "y": 90 },
+            { "model": "web", "x": 180, "y": 180 },
+            { "model": "web", "x": 180, "y": 270 },
+            { "model": "web2" },
+            { "model": "web2", "y": 90 },
+            { "model": "web2", "y": 180 },
+            { "model": "web2", "y": 270 },
+            { "model": "web2", "x": 180 },
+            { "model": "web2", "x": 180, "y": 90 },
+            { "model": "web2", "x": 180, "y": 180 },
+            { "model": "web2", "x": 180, "y": 270 }
+        ]
+    }
+}

@@ -1,0 +1,8 @@
+{
+    "parent": "item/template/tripwire_hook_template",
+	"textures": {
+        "hook": "blocks/trip_wire_source",
+        "wood": "blocks/planks_oak"
+	}
+}
+

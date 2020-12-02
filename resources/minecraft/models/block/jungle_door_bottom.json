@@ -1,0 +1,43 @@
+{
+    "ambientocclusion": false,
+    "textures": {
+        "particle": "blocks/door_jungle_lower",
+        "bottom": "blocks/door_jungle_lower"
+    },
+    "elements": [
+        {   "from": [ 0, 0, 0 ], 
+            "to": [ 3, 16, 16 ], 
+            "faces": {
+                "north": { "texture": "#bottom", "uv": [ 3, 8, 1.5, 16 ], "cullface": "north" },
+                "east": { "texture": "#bottom", "uv": [ 8, 0, 0, 8 ] },
+                "south": { "texture": "#bottom", "uv": [ 0, 8, 1.5, 16 ], "cullface": "south" },
+                "west": { "texture": "#bottom", "uv": [ 0, 0, 8, 8 ], "cullface": "west" },
+                "down": { "texture": "#bottom", "uv": [ 16, 0, 8, 1.5 ], "rotation": 90, "cullface": "down" }
+            }
+        },
+        {   "from": [ 0, 3, 7 ], 
+            "to": [ 3, 3, 9 ], 
+            "faces": {
+                "up": { "texture": "#bottom", "uv": [ 13.5, 14.5, 14.5, 16 ], "rotation": 90 }
+            }
+        },
+        {   "from": [ 0, 14, 7 ], 
+            "to": [ 3, 14, 9 ], 
+            "faces": {
+                "down": { "texture": "#bottom", "uv": [ 13.5, 7.5, 14.5, 9 ], "rotation": 90 }
+            }
+        },
+        {   "from": [ 0, 3, 7 ], 
+            "to": [ 3, 14, 7 ], 
+            "faces": {
+                "south": { "texture": "#bottom", "uv": [ 12, 9, 13.5, 14.5 ] }
+            }
+        },
+        {   "from": [ 0, 3, 9 ], 
+            "to": [ 3, 14, 9 ], 
+            "faces": {
+                "north": { "texture": "#bottom", "uv": [ 14.5, 9, 16, 14.5 ] }
+            }
+        }
+    ]
+}

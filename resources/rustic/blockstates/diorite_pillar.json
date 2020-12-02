@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "axis=y": { "model": "rustic:diorite_pillar_y" },
+    "axis=z": { "model": "rustic:diorite_pillar_z" },
+    "axis=x": { "model": "rustic:diorite_pillar_x" }
+  }
+}

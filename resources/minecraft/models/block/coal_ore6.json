@@ -1,0 +1,12 @@
+{
+    "parent": "block/cube",
+    "textures": {
+        "particle": "blocks/coal_ore",
+        "north": "blocks/coal_ore6",
+        "south": "blocks/coal_ore6",
+        "up": "blocks/coal_ore5",
+        "down": "blocks/coal_ore5",
+        "west": "blocks/coal_ore4",
+        "east": "blocks/coal_ore4"
+    }
+}
